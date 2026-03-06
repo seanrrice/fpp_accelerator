@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\seanr\\vitis_projects\\Project\\equalStep_baseline\\equalStep_baseline\\equalStep_baseline.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/06/26 14:22:03",
+ "timestampMillis": "1772832123317",
+ "buildStep": {
+  "cmdId": "88c6f210-88c4-4535-ac25-582d1ad99339",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\seanr\\vitis_projects\\Project\\equalStep_baseline\\equalStep_baseline\\logs\\equalStep_baseline.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\seanr\\vitis_projects\\Project\\equalStep_baseline\\hls_config.cfg --work_dir equalStep_baseline ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\seanr\\vitis_projects\\Project\\equalStep_baseline\\hls_config.cfg",
+   "--work_dir",
+   "equalStep_baseline"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\seanr\\vitis_projects\\Project\\equalStep_baseline"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/06/26 14:22:03",
+ "timestampMillis": "1772832123319",
+ "status": {
+  "cmdId": "88c6f210-88c4-4535-ac25-582d1ad99339",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/06/26 14:22:19",
+ "timestampMillis": "1772832139606",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\seanr\\vitis_projects\\Project\\equalStep_baseline.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/06/26 14:22:19",
+ "timestampMillis": "1772832139608",
+ "buildStep": {
+  "cmdId": "0a9304e4-8d1d-4477-980c-24b10afdf035",
+  "name": "",
+  "logFile": "C:/Users\\seanr\\vitis_projects\\Project\\equalStep_baseline\\equalStep_baseline\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\seanr\\vitis_projects\\Project\\equalStep_baseline"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/06/26 14:22:19",
+ "timestampMillis": "1772832139609",
+ "status": {
+  "cmdId": "0a9304e4-8d1d-4477-980c-24b10afdf035",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/06/26 14:22:29",
+ "timestampMillis": "1772832149355",
+ "status": {
+  "cmdId": "0a9304e4-8d1d-4477-980c-24b10afdf035",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/06/26 14:22:29",
+ "timestampMillis": "1772832149645",
+ "status": {
+  "cmdId": "88c6f210-88c4-4535-ac25-582d1ad99339",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/06/26 14:22:29",
+ "timestampMillis": "1772832149650",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/06/26 14:22:29",
+ "timestampMillis": "1772832149651",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
