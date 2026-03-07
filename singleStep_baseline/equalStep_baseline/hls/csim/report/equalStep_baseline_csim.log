@@ -1,0 +1,60 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../../src/equalStep_baseline.cpp in debug mode
+   Generating csim.exe
+
+==== Dataset: 0====
+Image size: 1080 x 1920
+Dataset 0 results: 
+Max phase error (rad) : 5.32907e-15
+RMS phase error (rad) : 2.41585e-15
+Max mod error: 6.25278e-13
+RMS mod error: 3.08157e-13
+
+==== Dataset: 1====
+Image size: 1080 x 1920
+Dataset 1 results: 
+Max phase error (rad) : 5.32907e-15
+RMS phase error (rad) : 2.44621e-15
+Max mod error: 6.25278e-13
+RMS mod error: 3.06858e-13
+
+==== Dataset: 2====
+Image size: 1080 x 1920
+Dataset 2 results: 
+Max phase error (rad) : 5.32907e-15
+RMS phase error (rad) : 2.46809e-15
+Max mod error: 5.68434e-13
+RMS mod error: 2.73466e-13
+
+==== Dataset: 3====
+Image size: 1080 x 1920
+Dataset 3 results: 
+Max phase error (rad) : 5.32907e-15
+RMS phase error (rad) : 2.43543e-15
+Max mod error: 5.68434e-13
+RMS mod error: 2.7372e-13
+
+==== Dataset: 4====
+Image size: 1080 x 1920
+Dataset 4 results: 
+Max phase error (rad) : 4.44089e-15
+RMS phase error (rad) : 2.32938e-15
+Max mod error: 2.27374e-13
+RMS mod error: 1.49676e-13
+
+==== Dataset: 5====
+Image size: 1080 x 1920
+Dataset 5 results: 
+Max phase error (rad) : 4.44089e-15
+RMS phase error (rad) : 2.32938e-15
+Max mod error: 2.27374e-13
+RMS mod error: 1.49676e-13
+
+=== Overall Results ===
+Global phase max err: 5.32907e-15
+Global phase RMSE:    2.40469e-15
+Global mod max err:   6.25278e-13
+Global mod RMSE:      2.52862e-13
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

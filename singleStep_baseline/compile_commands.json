@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=equalStep_baseline",
+      "-c",
+      "C:\\Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\..\\src\\equalStep_baseline.cpp"
+    ],
+    "file": "C:\\Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\..\\src\\equalStep_baseline.cpp"
+  },
+  {
+    "directory": "C:\\Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "C:\\Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\..\\test\\tb_equalStep.cpp"
+    ],
+    "file": "C:\\Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\..\\test\\tb_equalStep.cpp"
+  }
+]
