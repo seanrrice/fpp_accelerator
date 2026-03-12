@@ -251,12 +251,12 @@ Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pk
 Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
 Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
 Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
-Command           ap_source done; 0.172 sec.
+Command           ap_source done; 0.279 sec.
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tk8.6/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command         ap_source done; 0.367 sec.
+Command         ap_source done; 0.739 sec.
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
@@ -508,13 +508,13 @@ Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgI
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
-Command         ap_source done; 0.159 sec.
+Command         ap_source done; 0.258 sec.
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tk8.6/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command       ap_source done; 0.76 sec.
-INFO-FLOW: Workspace C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls opened at Sat Mar 07 14:42:07 -0700 2026
+Command       ap_source done; 1.28 sec.
+INFO-FLOW: Workspace C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls opened at Wed Mar 11 18:45:32 -0700 2026
 Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Execute       send_msg_by_id INFO @200-2174@%s%s component C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg 
@@ -540,6 +540,10 @@ Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=../TestData' from C:/U
 INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(12)
 Execute         add_files -tb C:/Users/seanr/vitis_projects/fpp_project/TestData 
 INFO: [HLS 200-10] Adding test bench file 'C:/Users/seanr/vitis_projects/fpp_project/TestData' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=../TestData_small' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData_small' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(13)
+Execute         add_files -tb C:/Users/seanr/vitis_projects/fpp_project/TestData_small 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/seanr/vitis_projects/fpp_project/TestData_small' to the project
 Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=equalStep_baseline' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(7) 
 INFO: [HLS 200-1465] Applying config ini 'syn.top=equalStep_baseline' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(7)
 Execute         set_top equalStep_baseline 
@@ -555,7 +559,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/2025.1/Vitis\lib\win64.o
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
-Command           create_platform done; 1.455 sec.
+Command           create_platform done; 2.078 sec.
 Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
@@ -568,43 +572,746 @@ Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/ut
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command           ap_source done; 0.109 sec.
+Command           ap_source done; 0.14 sec.
 Execute           ap_part_info -name xc7z020-clg400-1 -data info 
 Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 1.605 sec.
+Command         set_part done; 2.265 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'clock=16ns' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying config ini 'clock=16ns' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(14)
+Execute         create_clock -period 16ns 
+Execute           ap_set_clock -name default -period 16 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 16ns.
 Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(5) 
 INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(5)
 Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 1.669 sec.
+Command       apply_ini done; 2.43 sec.
 Execute       write_component -config C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg 
 Execute         send_msg_by_id INFO @200-2176@%s C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/vitis-comp.json 
 INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/vitis-comp.json
-Command     open_solution done; 2.483 sec.
-Command   open_component done; 2.489 sec.
+Command     open_solution done; 3.856 sec.
+Command   open_component done; 3.894 sec.
 Execute   apply_ini C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
+Execute   ::AP::init_summary_file csynth 
 Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute   csynth_design 
 Execute     ap_part_info -name xc7z020-clg400-1 -data info 
-INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/xilinx-performance-pragma-detector ../src/equalStep_baseline.cpp -- -fhls -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.cpp.xilinx-performance-pragma-detector.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.cpp.xilinx-performance-pragma-detector.err.log
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 3 seconds. Elapsed time: 8.49 seconds; current allocated memory: 166.469 MB.
+Execute       set_directive_top equalStep_baseline -name=equalStep_baseline 
+INFO: [HLS 200-10] Analyzing design file '../src/equalStep_baseline.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling ../src/equalStep_baseline.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang ../src/equalStep_baseline.cpp -foptimization-record-file=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=16 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/2025.1/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.cpp.clang.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 1 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/2025.1/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/clang.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp  -target fpga  -directive=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/.systemc_flag -fix-errors C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.269 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp  -target fpga  -directive=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/all.directive.json -fix-errors C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.207 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.2 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp  -target fpga  
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0 > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/yaml.tcl 
+Command       clang_tidy done; 0.299 sec.
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=16 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.bc {-hls-platform-db-name=C:/Xilinx/2025.1/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp.clang.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.pp.0.cpp.clang.err.log
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 3.48 seconds; current allocated memory: 168.754 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.g.bc"  
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.g.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.0.bc > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+Command       run_link_or_opt done; 0.182 sec.
+Execute       run_link_or_opt -opt -out C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.1.lower.bc -args C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.1.lower.bc > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.368 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libhlsm_39.bc C:/Xilinx/2025.1/Vitis/win64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libhlsm_39.bc C:/Xilinx/2025.1/Vitis/win64/lib/libhlsmc++_39.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+Command       run_link_or_opt done; 2.762 sec.
+Execute       run_link_or_opt -opt -out C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=equalStep_baseline -reflow-float-conversion 
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=equalStep_baseline -reflow-float-conversion -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 1.23 sec.
+Execute       run_link_or_opt -out C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libfloatconversion_39.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+Command       run_link_or_opt done; 0.177 sec.
+Execute       run_link_or_opt -opt -out C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.5.gdce.bc -args C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=equalStep_baseline 
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=equalStep_baseline -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.5.gdce.bc > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.207 sec.
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=equalStep_baseline -mllvm -hls-db-dir -mllvm C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -reflow-unroll-size-threshold=10000 -mllvm -reflow-unroll-cost-threshold=1000000 -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-force-aggressive-unroll=0 -mllvm -reflow-aggressive-unroll-adjust-factor=1.000000 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -reflow-enable-critical-path-for-performance=1 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-promotion=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -reflow-enable-dataflow-canon=true -mllvm -reflow-enable-dataflow-canon2=true -mllvm -reflow-dump-extra-complexity-metric=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=16 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=4.32 -x ir C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.5.gdce.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=C:/Xilinx/2025.1/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 53,786 Compile/Link (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 53,786 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 2,143 Unroll/Inline (step 1) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 2,143 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,538 Unroll/Inline (step 2) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,424 Unroll/Inline (step 3) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 1,424 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 694 Unroll/Inline (step 4) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 694 Array/Struct (step 1) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 694 Array/Struct (step 2) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 694 Array/Struct (step 3) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 694 Array/Struct (step 4) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 700 Array/Struct (step 5) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 700 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 632 Performance (step 1) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 632 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 626 Performance (step 2) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 626 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 626 Performance (step 3) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 626 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 626 Performance (step 4) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 626 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 634 HW Transforms (step 1) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 634 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+Command       send_msg_by_id done; 0.244 sec.
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 643 HW Transforms (step 2) (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 643 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'void cordic_::cordic_circ_v1<88, 1, 0, 0, 89, 4, 86, 1>(ap_fixed<89, 4, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<89, 4, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<86, 1, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700:5)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.46.55.64.73.82)' into 'fp_struct<double>::to_double() const (.52.61.70.79)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.52.61.70.79)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_abs<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_abs.h:13:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:648:0)
+INFO: [HLS 214-178] Inlining function 'cordic_::atan_traits<double>::div(double, double)' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:648:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:648:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double cordic_::atan2_cordic_Q1<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:711:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.46.55.64.73.82)' into 'double cordic_::atan2_cordic_Q1<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:711:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double cordic_::atan2_cordic_Q1<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:711:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'double generic_abs<double>(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'double cordic_::atan2_cordic_Q1<double>(double, double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'atan2' into 'equalStep_baseline(unsigned short const (*) [64][64], double (*) [64], double (*) [64])' (../src/equalStep_baseline.cpp:22:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:138:2 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_40_4> at ../src/equalStep_baseline.cpp:40:30 
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 12.622 seconds; current allocated memory: 172.676 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 172.676 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top equalStep_baseline -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.0.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.243 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.278 seconds; current allocated memory: 180.332 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.1.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'cordic_::atan2_cordic<double>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'cordic_::atan2_cordic<double>' () automatically.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.2.prechk.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.106 seconds; current allocated memory: 183.672 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.g.1.bc to C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -dce -hls-dead-arg-elim -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -extract-subproc -global-constprop -deadargelim -globaldce -legalize-global -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -canonicalize-dataflow -directive-preproc -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.o.1.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'cordic_::atan2_cordic<double>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'cordic_::atan2_cordic<double>' () automatically.
+Command         transform done; 0.147 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.o.1.tmp.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'cordic_::atan2_generic<double>'... converting 8 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.242 seconds; current allocated memory: 206.613 MB.
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -gvn -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -drop-inferred-ii -dump-complexity-metric C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.o.2.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Execute           auto_get_db
+Command         transform done; 0.159 sec.
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -cdfg-build C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.o.3.bc -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.248 seconds; current allocated memory: 237.594 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.876 sec.
+Command     elaborate done; 17.004 sec.
+Execute     ap_eval exec zip -j C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command     ap_eval done; 0.292 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'equalStep_baseline' ...
+Execute       ap_set_top_model equalStep_baseline 
+WARNING: [SYN 201-103] Legalizing function name 'atan2_generic<double>_Pipeline_1' to 'atan2_generic_double_Pipeline_1'.
+WARNING: [SYN 201-103] Legalizing function name 'atan2_generic<double>' to 'atan2_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'atan2_cordic<double>' to 'atan2_cordic_double_s'.
+Execute       get_model_list equalStep_baseline -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model equalStep_baseline 
+Execute       preproc_iomode -model atan2_cordic<double> 
+Execute       preproc_iomode -model atan2_generic<double> 
+Execute       preproc_iomode -model atan2_generic<double>_Pipeline_1 
+Execute       preproc_iomode -model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+Execute       get_model_list equalStep_baseline -filter all-wo-channel 
+INFO-FLOW: Model list for configure: equalStep_baseline_Pipeline_VITIS_LOOP_40_4 atan2_generic<double>_Pipeline_1 atan2_generic<double> atan2_cordic<double> equalStep_baseline
+INFO-FLOW: Configuring Module : equalStep_baseline_Pipeline_VITIS_LOOP_40_4 ...
+Execute       set_default_model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+Execute       apply_spec_resource_limit equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+INFO-FLOW: Configuring Module : atan2_generic<double>_Pipeline_1 ...
+Execute       set_default_model atan2_generic<double>_Pipeline_1 
+Execute       apply_spec_resource_limit atan2_generic<double>_Pipeline_1 
+INFO-FLOW: Configuring Module : atan2_generic<double> ...
+Execute       set_default_model atan2_generic<double> 
+Execute       apply_spec_resource_limit atan2_generic<double> 
+INFO-FLOW: Configuring Module : atan2_cordic<double> ...
+Execute       set_default_model atan2_cordic<double> 
+Execute       apply_spec_resource_limit atan2_cordic<double> 
+INFO-FLOW: Configuring Module : equalStep_baseline ...
+Execute       set_default_model equalStep_baseline 
+Execute       apply_spec_resource_limit equalStep_baseline 
+INFO-FLOW: Model list for preprocess: equalStep_baseline_Pipeline_VITIS_LOOP_40_4 atan2_generic<double>_Pipeline_1 atan2_generic<double> atan2_cordic<double> equalStep_baseline
+INFO-FLOW: Preprocessing Module: equalStep_baseline_Pipeline_VITIS_LOOP_40_4 ...
+Execute       set_default_model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+Execute       cdfg_preprocess -model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+Execute       rtl_gen_preprocess equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+INFO-FLOW: Preprocessing Module: atan2_generic<double>_Pipeline_1 ...
+Execute       set_default_model atan2_generic<double>_Pipeline_1 
+Execute       cdfg_preprocess -model atan2_generic<double>_Pipeline_1 
+Execute       rtl_gen_preprocess atan2_generic<double>_Pipeline_1 
+INFO-FLOW: Preprocessing Module: atan2_generic<double> ...
+Execute       set_default_model atan2_generic<double> 
+Execute       cdfg_preprocess -model atan2_generic<double> 
+Execute       rtl_gen_preprocess atan2_generic<double> 
+INFO-FLOW: Preprocessing Module: atan2_cordic<double> ...
+Execute       set_default_model atan2_cordic<double> 
+Execute       cdfg_preprocess -model atan2_cordic<double> 
+Execute       rtl_gen_preprocess atan2_cordic<double> 
+INFO-FLOW: Preprocessing Module: equalStep_baseline ...
+Execute       set_default_model equalStep_baseline 
+Execute       cdfg_preprocess -model equalStep_baseline 
+Execute       rtl_gen_preprocess equalStep_baseline 
+INFO-FLOW: Model list for synthesis: equalStep_baseline_Pipeline_VITIS_LOOP_40_4 atan2_generic<double>_Pipeline_1 atan2_generic<double> atan2_cordic<double> equalStep_baseline
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+Execute       schedule -model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_4'.
+WARNING: [HLS 200-880] The II Violation in module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' (loop 'VITIS_LOOP_40_4'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('Phi_t1_write_ln37', ../src/equalStep_baseline.cpp:37) of variable 'Phi_t1', ../src/equalStep_baseline.cpp:43 on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37 and 'load' operation 64 bit ('Phi_t1_load', ../src/equalStep_baseline.cpp:43) on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37.
+WARNING: [HLS 200-880] The II Violation in module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' (loop 'VITIS_LOOP_40_4'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('Phi_t1_write_ln37', ../src/equalStep_baseline.cpp:37) of variable 'Phi_t1', ../src/equalStep_baseline.cpp:43 on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37 and 'load' operation 64 bit ('Phi_t1_load', ../src/equalStep_baseline.cpp:43) on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37.
+WARNING: [HLS 200-880] The II Violation in module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' (loop 'VITIS_LOOP_40_4'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('Phi_t1_write_ln37', ../src/equalStep_baseline.cpp:37) of variable 'Phi_t1', ../src/equalStep_baseline.cpp:43 on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37 and 'load' operation 64 bit ('Phi_t1_load', ../src/equalStep_baseline.cpp:43) on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 17, loop 'VITIS_LOOP_40_4'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.831 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.165 seconds; current allocated memory: 241.754 MB.
+Execute       syn_report -verbosereport -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4.sched.adb -f 
+INFO-FLOW: Finish scheduling equalStep_baseline_Pipeline_VITIS_LOOP_40_4.
+Execute       set_default_model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+Execute       bind -model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 243.039 MB.
+Execute       syn_report -verbosereport -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4.bind.adb -f 
+INFO-FLOW: Finish binding equalStep_baseline_Pipeline_VITIS_LOOP_40_4.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'atan2_generic_double_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model atan2_generic<double>_Pipeline_1 
+Execute       schedule -model atan2_generic<double>_Pipeline_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.112 seconds; current allocated memory: 243.285 MB.
+Execute       syn_report -verbosereport -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1.sched.adb -f 
+INFO-FLOW: Finish scheduling atan2_generic<double>_Pipeline_1.
+Execute       set_default_model atan2_generic<double>_Pipeline_1 
+Execute       bind -model atan2_generic<double>_Pipeline_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 243.309 MB.
+Execute       syn_report -verbosereport -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1.bind.adb -f 
+INFO-FLOW: Finish binding atan2_generic<double>_Pipeline_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'atan2_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model atan2_generic<double> 
+Execute       schedule -model atan2_generic<double> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 243.527 MB.
+Execute       syn_report -verbosereport -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s.sched.adb -f 
+INFO-FLOW: Finish scheduling atan2_generic<double>.
+Execute       set_default_model atan2_generic<double> 
+Execute       bind -model atan2_generic<double> 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 243.633 MB.
+Execute       syn_report -verbosereport -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s.bind.adb -f 
+INFO-FLOW: Finish binding atan2_generic<double>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'atan2_cordic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model atan2_cordic<double> 
+Execute       schedule -model atan2_cordic<double> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 245.070 MB.
+Execute       syn_report -verbosereport -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s.sched.adb -f 
+INFO-FLOW: Finish scheduling atan2_cordic<double>.
+Execute       set_default_model atan2_cordic<double> 
+Execute       bind -model atan2_cordic<double> 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 1.254 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.329 seconds; current allocated memory: 245.309 MB.
+Execute       syn_report -verbosereport -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s.bind.adb -f 
+INFO-FLOW: Finish binding atan2_cordic<double>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'equalStep_baseline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model equalStep_baseline 
+Execute       schedule -model equalStep_baseline 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 245.574 MB.
+Execute       syn_report -verbosereport -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.sched.adb -f 
+INFO-FLOW: Finish scheduling equalStep_baseline.
+Execute       set_default_model equalStep_baseline 
+Execute       bind -model equalStep_baseline 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 245.844 MB.
+Execute       syn_report -verbosereport -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.bind.adb -f 
+INFO-FLOW: Finish binding equalStep_baseline.
+Execute       get_model_list equalStep_baseline -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+Execute       rtl_gen_preprocess atan2_generic<double>_Pipeline_1 
+Execute       rtl_gen_preprocess atan2_generic<double> 
+Execute       rtl_gen_preprocess atan2_cordic<double> 
+Execute       rtl_gen_preprocess equalStep_baseline 
+INFO-FLOW: Model list for RTL generation: equalStep_baseline_Pipeline_VITIS_LOOP_40_4 atan2_generic<double>_Pipeline_1 atan2_generic<double> atan2_cordic<double> equalStep_baseline
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 -top_prefix equalStep_baseline_ -sub_prefix equalStep_baseline_ -mg_file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' pipeline 'VITIS_LOOP_40_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'uitodp_32ns_64_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4'.
+INFO: [RTMG 210-279] Implementing memory 'equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_sin_k_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_cos_k_ROM_AUTO_1R' using auto ROMs.
+Command       create_rtl_model done; 0.14 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.232 seconds; current allocated memory: 248.566 MB.
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.rtl_wrap.cfg.tcl 
+Execute       gen_rtl equalStep_baseline_Pipeline_VITIS_LOOP_40_4 -style xilinx -f -lang vhdl -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/vhdl/equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+Execute       gen_rtl equalStep_baseline_Pipeline_VITIS_LOOP_40_4 -style xilinx -f -lang vlog -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/verilog/equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+Execute       syn_report -csynth -model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/equalStep_baseline_Pipeline_VITIS_LOOP_40_4_csynth.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -rtlxml -model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/equalStep_baseline_Pipeline_VITIS_LOOP_40_4_csynth.xml 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -verbosereport -model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4.verbose.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 -f -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4.adb 
+Execute       db_write -model equalStep_baseline_Pipeline_VITIS_LOOP_40_4 -bindview -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info equalStep_baseline_Pipeline_VITIS_LOOP_40_4 -p C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'atan2_generic_double_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model atan2_generic<double>_Pipeline_1 -top_prefix equalStep_baseline_ -sub_prefix equalStep_baseline_ -mg_file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'atan2_generic_double_Pipeline_1' pipeline 'Loop 1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'atan2_generic_double_Pipeline_1'.
+INFO: [RTMG 210-279] Implementing memory 'equalStep_baseline_atan2_generic_double_Pipeline_1_cordic_ctab_table_128_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.305 seconds; current allocated memory: 250.586 MB.
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.rtl_wrap.cfg.tcl 
+Execute       gen_rtl atan2_generic<double>_Pipeline_1 -style xilinx -f -lang vhdl -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/vhdl/equalStep_baseline_atan2_generic_double_Pipeline_1 
+Execute       gen_rtl atan2_generic<double>_Pipeline_1 -style xilinx -f -lang vlog -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/verilog/equalStep_baseline_atan2_generic_double_Pipeline_1 
+Execute       syn_report -csynth -model atan2_generic<double>_Pipeline_1 -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/atan2_generic_double_Pipeline_1_csynth.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -rtlxml -model atan2_generic<double>_Pipeline_1 -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/atan2_generic_double_Pipeline_1_csynth.xml 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -verbosereport -model atan2_generic<double>_Pipeline_1 -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1.verbose.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -model atan2_generic<double>_Pipeline_1 -f -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1.adb 
+Execute       db_write -model atan2_generic<double>_Pipeline_1 -bindview -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info atan2_generic<double>_Pipeline_1 -p C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'atan2_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model atan2_generic<double> -top_prefix equalStep_baseline_ -sub_prefix equalStep_baseline_ -mg_file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_86ns_7ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ctlz_86_86_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_31_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'atan2_generic_double_s'.
+Command       create_rtl_model done; 0.121 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.445 seconds; current allocated memory: 252.680 MB.
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.rtl_wrap.cfg.tcl 
+Execute       gen_rtl atan2_generic<double> -style xilinx -f -lang vhdl -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/vhdl/equalStep_baseline_atan2_generic_double_s 
+Execute       gen_rtl atan2_generic<double> -style xilinx -f -lang vlog -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/verilog/equalStep_baseline_atan2_generic_double_s 
+Execute       syn_report -csynth -model atan2_generic<double> -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/atan2_generic_double_s_csynth.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -rtlxml -model atan2_generic<double> -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/atan2_generic_double_s_csynth.xml 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -verbosereport -model atan2_generic<double> -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s.verbose.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -model atan2_generic<double> -f -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s.adb 
+Execute       db_write -model atan2_generic<double> -bindview -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info atan2_generic<double> -p C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'atan2_cordic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model atan2_cordic<double> -top_prefix equalStep_baseline_ -sub_prefix equalStep_baseline_ -mg_file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'atan2_cordic_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.914 seconds; current allocated memory: 255.223 MB.
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.rtl_wrap.cfg.tcl 
+Execute       gen_rtl atan2_cordic<double> -style xilinx -f -lang vhdl -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/vhdl/equalStep_baseline_atan2_cordic_double_s 
+Execute       gen_rtl atan2_cordic<double> -style xilinx -f -lang vlog -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/verilog/equalStep_baseline_atan2_cordic_double_s 
+Execute       syn_report -csynth -model atan2_cordic<double> -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/atan2_cordic_double_s_csynth.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -rtlxml -model atan2_cordic<double> -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/atan2_cordic_double_s_csynth.xml 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -verbosereport -model atan2_cordic<double> -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s.verbose.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -model atan2_cordic<double> -f -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s.adb 
+Execute       db_write -model atan2_cordic<double> -bindview -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info atan2_cordic<double> -p C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'equalStep_baseline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model equalStep_baseline -top_prefix  -sub_prefix equalStep_baseline_ -mg_file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/imStack' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/wrappedPhase' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/mod_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'equalStep_baseline' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_30_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'equalStep_baseline'.
+Command       create_rtl_model done; 0.101 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.644 seconds; current allocated memory: 258.262 MB.
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.rtl_wrap.cfg.tcl 
+Execute       gen_rtl equalStep_baseline -istop -style xilinx -f -lang vhdl -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/vhdl/equalStep_baseline 
+Execute       gen_rtl equalStep_baseline -istop -style xilinx -f -lang vlog -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/verilog/equalStep_baseline 
+Execute       syn_report -csynth -model equalStep_baseline -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/equalStep_baseline_csynth.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -rtlxml -model equalStep_baseline -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/equalStep_baseline_csynth.xml 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -verbosereport -model equalStep_baseline -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.verbose.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -model equalStep_baseline -f -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.adb 
+Execute       db_write -model equalStep_baseline -bindview -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info equalStep_baseline -p C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline 
+Execute       export_constraint_db -f -tool general -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.constraint.tcl 
+Execute       syn_report -designview -model equalStep_baseline -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.design.xml 
+Execute       syn_report -csynthDesign -model equalStep_baseline -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth.rpt -MHOut C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -wcfg -model equalStep_baseline -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model equalStep_baseline -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.protoinst 
+Execute       sc_get_clocks equalStep_baseline 
+Execute       sc_get_portdomain equalStep_baseline 
+INFO-FLOW: Model list for RTL component generation: equalStep_baseline_Pipeline_VITIS_LOOP_40_4 atan2_generic<double>_Pipeline_1 atan2_generic<double> atan2_cordic<double> equalStep_baseline
+INFO-FLOW: Handling components in module [equalStep_baseline_Pipeline_VITIS_LOOP_40_4] ... 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4.compgen.tcl 
+INFO-FLOW: Found component equalStep_baseline_uitodp_32ns_64_4_no_dsp_1.
+INFO-FLOW: Append model equalStep_baseline_uitodp_32ns_64_4_no_dsp_1
+INFO-FLOW: Found component equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_sin_k_ROM_AUTO_1R.
+INFO-FLOW: Append model equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_sin_k_ROM_AUTO_1R
+INFO-FLOW: Found component equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_cos_k_ROM_AUTO_1R.
+INFO-FLOW: Append model equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_cos_k_ROM_AUTO_1R
+INFO-FLOW: Found component equalStep_baseline_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model equalStep_baseline_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [atan2_generic_double_Pipeline_1] ... 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1.compgen.tcl 
+INFO-FLOW: Found component equalStep_baseline_atan2_generic_double_Pipeline_1_cordic_ctab_table_128_ROM_AUTO_1R.
+INFO-FLOW: Append model equalStep_baseline_atan2_generic_double_Pipeline_1_cordic_ctab_table_128_ROM_AUTO_1R
+INFO-FLOW: Found component equalStep_baseline_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model equalStep_baseline_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [atan2_generic_double_s] ... 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s.compgen.tcl 
+INFO-FLOW: Found component equalStep_baseline_ddiv_64ns_64ns_64_31_no_dsp_1.
+INFO-FLOW: Append model equalStep_baseline_ddiv_64ns_64ns_64_31_no_dsp_1
+INFO-FLOW: Found component equalStep_baseline_ctlz_86_86_1_1.
+INFO-FLOW: Append model equalStep_baseline_ctlz_86_86_1_1
+INFO-FLOW: Found component equalStep_baseline_bitselect_1ns_86ns_7ns_1_1_1.
+INFO-FLOW: Append model equalStep_baseline_bitselect_1ns_86ns_7ns_1_1_1
+INFO-FLOW: Handling components in module [atan2_cordic_double_s] ... 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s.compgen.tcl 
+INFO-FLOW: Found component equalStep_baseline_dcmp_64ns_64ns_1_2_no_dsp_1.
+INFO-FLOW: Append model equalStep_baseline_dcmp_64ns_64ns_1_2_no_dsp_1
+INFO-FLOW: Handling components in module [equalStep_baseline] ... 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.compgen.tcl 
+INFO-FLOW: Found component equalStep_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1.
+INFO-FLOW: Append model equalStep_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1
+INFO-FLOW: Found component equalStep_baseline_dmul_64ns_64ns_64_5_max_dsp_1.
+INFO-FLOW: Append model equalStep_baseline_dmul_64ns_64ns_64_5_max_dsp_1
+INFO-FLOW: Found component equalStep_baseline_dsqrt_64ns_64ns_64_30_no_dsp_1.
+INFO-FLOW: Append model equalStep_baseline_dsqrt_64ns_64ns_64_30_no_dsp_1
+INFO-FLOW: Append model equalStep_baseline_Pipeline_VITIS_LOOP_40_4
+INFO-FLOW: Append model atan2_generic_double_Pipeline_1
+INFO-FLOW: Append model atan2_generic_double_s
+INFO-FLOW: Append model atan2_cordic_double_s
+INFO-FLOW: Append model equalStep_baseline
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: equalStep_baseline_uitodp_32ns_64_4_no_dsp_1 equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_sin_k_ROM_AUTO_1R equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_cos_k_ROM_AUTO_1R equalStep_baseline_flow_control_loop_pipe_sequential_init equalStep_baseline_atan2_generic_double_Pipeline_1_cordic_ctab_table_128_ROM_AUTO_1R equalStep_baseline_flow_control_loop_pipe_sequential_init equalStep_baseline_ddiv_64ns_64ns_64_31_no_dsp_1 equalStep_baseline_ctlz_86_86_1_1 equalStep_baseline_bitselect_1ns_86ns_7ns_1_1_1 equalStep_baseline_dcmp_64ns_64ns_1_2_no_dsp_1 equalStep_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1 equalStep_baseline_dmul_64ns_64ns_64_5_max_dsp_1 equalStep_baseline_dsqrt_64ns_64ns_64_30_no_dsp_1 equalStep_baseline_Pipeline_VITIS_LOOP_40_4 atan2_generic_double_Pipeline_1 atan2_generic_double_s atan2_cordic_double_s equalStep_baseline
+INFO-FLOW: Generating C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model equalStep_baseline_uitodp_32ns_64_4_no_dsp_1
+INFO-FLOW: To file: write model equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_sin_k_ROM_AUTO_1R
+INFO-FLOW: To file: write model equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_cos_k_ROM_AUTO_1R
+INFO-FLOW: To file: write model equalStep_baseline_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model equalStep_baseline_atan2_generic_double_Pipeline_1_cordic_ctab_table_128_ROM_AUTO_1R
+INFO-FLOW: To file: write model equalStep_baseline_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model equalStep_baseline_ddiv_64ns_64ns_64_31_no_dsp_1
+INFO-FLOW: To file: write model equalStep_baseline_ctlz_86_86_1_1
+INFO-FLOW: To file: write model equalStep_baseline_bitselect_1ns_86ns_7ns_1_1_1
+INFO-FLOW: To file: write model equalStep_baseline_dcmp_64ns_64ns_1_2_no_dsp_1
+INFO-FLOW: To file: write model equalStep_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1
+INFO-FLOW: To file: write model equalStep_baseline_dmul_64ns_64ns_64_5_max_dsp_1
+INFO-FLOW: To file: write model equalStep_baseline_dsqrt_64ns_64ns_64_30_no_dsp_1
+INFO-FLOW: To file: write model equalStep_baseline_Pipeline_VITIS_LOOP_40_4
+INFO-FLOW: To file: write model atan2_generic_double_Pipeline_1
+INFO-FLOW: To file: write model atan2_generic_double_s
+INFO-FLOW: To file: write model atan2_cordic_double_s
+INFO-FLOW: To file: write model equalStep_baseline
+INFO-FLOW: Generating C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
 
-    while executing
-"::AESL_CSIM::c_sim "$argn" "
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
-4
-    while executing
-"::AESL_CSIM::csim_cmd_wrap $args"
-INFO-FLOW: Caught error in csim_design: 4
-    while executing
-"ap_internal_csim_design "
-Command   csim_design done; error code: 2; 3.817 sec.
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.127 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=16.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/vhdl' dstVlogDir='C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/vlog' tclDir='C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db' modelList='equalStep_baseline_uitodp_32ns_64_4_no_dsp_1
+equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_sin_k_ROM_AUTO_1R
+equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_cos_k_ROM_AUTO_1R
+equalStep_baseline_flow_control_loop_pipe_sequential_init
+equalStep_baseline_atan2_generic_double_Pipeline_1_cordic_ctab_table_128_ROM_AUTO_1R
+equalStep_baseline_flow_control_loop_pipe_sequential_init
+equalStep_baseline_ddiv_64ns_64ns_64_31_no_dsp_1
+equalStep_baseline_ctlz_86_86_1_1
+equalStep_baseline_bitselect_1ns_86ns_7ns_1_1_1
+equalStep_baseline_dcmp_64ns_64ns_1_2_no_dsp_1
+equalStep_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1
+equalStep_baseline_dmul_64ns_64ns_64_5_max_dsp_1
+equalStep_baseline_dsqrt_64ns_64ns_64_30_no_dsp_1
+equalStep_baseline_Pipeline_VITIS_LOOP_40_4
+atan2_generic_double_Pipeline_1
+atan2_generic_double_s
+atan2_cordic_double_s
+equalStep_baseline
+' expOnly='0'
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4.compgen.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1.compgen.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s.compgen.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s.compgen.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.compgen.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.149 seconds; current allocated memory: 262.270 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='equalStep_baseline_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.8 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='equalStep_baseline_uitodp_32ns_64_4_no_dsp_1
+equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_sin_k_ROM_AUTO_1R
+equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_cos_k_ROM_AUTO_1R
+equalStep_baseline_flow_control_loop_pipe_sequential_init
+equalStep_baseline_atan2_generic_double_Pipeline_1_cordic_ctab_table_128_ROM_AUTO_1R
+equalStep_baseline_flow_control_loop_pipe_sequential_init
+equalStep_baseline_ddiv_64ns_64ns_64_31_no_dsp_1
+equalStep_baseline_ctlz_86_86_1_1
+equalStep_baseline_bitselect_1ns_86ns_7ns_1_1_1
+equalStep_baseline_dcmp_64ns_64ns_1_2_no_dsp_1
+equalStep_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1
+equalStep_baseline_dmul_64ns_64ns_64_5_max_dsp_1
+equalStep_baseline_dsqrt_64ns_64ns_64_30_no_dsp_1
+equalStep_baseline_Pipeline_VITIS_LOOP_40_4
+atan2_generic_double_Pipeline_1
+atan2_generic_double_s
+atan2_cordic_double_s
+equalStep_baseline
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/top-io-be.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.compgen.dataonly.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline_Pipeline_VITIS_LOOP_40_4.tbgen.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_Pipeline_1.tbgen.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_generic_double_s.tbgen.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/atan2_cordic_double_s.tbgen.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.constraint.tcl 
+Execute       sc_get_clocks equalStep_baseline 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/impl/misc/equalStep_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1_ip.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/impl/misc/equalStep_baseline_dcmp_64ns_64ns_1_2_no_dsp_1_ip.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/impl/misc/equalStep_baseline_ddiv_64ns_64ns_64_31_no_dsp_1_ip.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/impl/misc/equalStep_baseline_dmul_64ns_64ns_64_5_max_dsp_1_ip.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/impl/misc/equalStep_baseline_dsqrt_64ns_64ns_64_30_no_dsp_1_ip.tcl 
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/impl/misc/equalStep_baseline_uitodp_32ns_64_4_no_dsp_1_ip.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} cache_nodes {} report_dict {TOPINST equalStep_baseline MODULE2INSTS {equalStep_baseline equalStep_baseline equalStep_baseline_Pipeline_VITIS_LOOP_40_4 grp_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_fu_109 atan2_cordic_double_s grp_atan2_cordic_double_s_fu_123 atan2_generic_double_s grp_atan2_generic_double_s_fu_162 atan2_generic_double_Pipeline_1 grp_atan2_generic_double_Pipeline_1_fu_118} INST2MODULE {equalStep_baseline equalStep_baseline grp_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_fu_109 equalStep_baseline_Pipeline_VITIS_LOOP_40_4 grp_atan2_cordic_double_s_fu_123 atan2_cordic_double_s grp_atan2_generic_double_s_fu_162 atan2_generic_double_s grp_atan2_generic_double_Pipeline_1_fu_118 atan2_generic_double_Pipeline_1} INSTDATA {equalStep_baseline {DEPTH 1 CHILDREN {grp_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_fu_109 grp_atan2_cordic_double_s_fu_123}} grp_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_fu_109 {DEPTH 2 CHILDREN {}} grp_atan2_cordic_double_s_fu_123 {DEPTH 2 CHILDREN grp_atan2_generic_double_s_fu_162} grp_atan2_generic_double_s_fu_162 {DEPTH 3 CHILDREN grp_atan2_generic_double_Pipeline_1_fu_118} grp_atan2_generic_double_Pipeline_1_fu_118 {DEPTH 4 CHILDREN {}}} MODULEDATA {equalStep_baseline_Pipeline_VITIS_LOOP_40_4 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln40_fu_158_p2 SOURCE ../src/equalStep_baseline.cpp:40 VARIABLE icmp_ln40 LOOP VITIS_LOOP_40_4 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln40_fu_164_p2 SOURCE ../src/equalStep_baseline.cpp:40 VARIABLE add_ln40 LOOP VITIS_LOOP_40_4 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 3 OPTYPE uitodp PRAGMA {} RTLNAME uitodp_32ns_64_4_no_dsp_1_U3 SOURCE ../src/equalStep_baseline.cpp:42 VARIABLE val LOOP VITIS_LOOP_40_4 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op uitodp} VISIBLE false} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME sin_k_U SOURCE {} VARIABLE sin_k LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {64 5 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME cos_k_U SOURCE {} VARIABLE cos_k LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {64 5 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} atan2_generic_double_Pipeline_1 {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln138_fu_139_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE icmp_ln138 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln138_fu_145_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE add_ln138 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_pipe LATENCY 0 OPTYPE ashr PRAGMA {} RTLNAME y_s_fu_178_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE y_s LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op ashr} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln101_fu_184_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE sub_ln101 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln101_fu_190_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE add_ln101 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME x_fu_196_p3 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE x LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_pipe LATENCY 0 OPTYPE ashr PRAGMA {} RTLNAME x_s_fu_204_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE x_s LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op ashr} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln101_1_fu_210_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE sub_ln101_1 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln101_1_fu_216_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE add_ln101_1 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME y_fu_222_p3 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE y LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME b_2_fu_252_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE b_2 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln101_2_fu_274_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE sub_ln101_2 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln101_2_fu_280_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE add_ln101_2 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME z_fu_286_p3 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700} VARIABLE z LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME cordic_ctab_table_128_U SOURCE {} VARIABLE cordic_ctab_table_128 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 4 URAM 0 STORAGESUBTYPE {} STORAGESIZE {126 128 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true}} AREA {DSP 0 BRAM 4 URAM 0}} atan2_generic_double_s {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln655_fu_162_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:655} VARIABLE add_ln655 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setlt PRAGMA {} RTLNAME icmp_ln655_fu_172_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:655} VARIABLE icmp_ln655 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setlt} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln662_fu_178_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:662} VARIABLE icmp_ln662 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME d_exp_fu_184_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:688} VARIABLE d_exp LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln695_fu_235_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:695} VARIABLE sub_ln695 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln695_fu_241_p3 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:695} VARIABLE select_ln695 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_pipe LATENCY 0 OPTYPE shl PRAGMA {} RTLNAME shl_ln695_fu_253_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:695} VARIABLE shl_ln695 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op shl} VISIBLE false} {BINDTYPE op ID {} IMPL auto_pipe LATENCY 0 OPTYPE lshr PRAGMA {} RTLNAME lshr_ln695_fu_259_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:695} VARIABLE lshr_ln695 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op lshr} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME y_1_fu_265_p3 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:695} VARIABLE y_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln702_fu_277_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE icmp_ln702 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln702_fu_291_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE sub_ln702 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME tmp_3_fu_305_p1 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE select_ln702 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE ctlz PRAGMA {} RTLNAME ctlz_86_86_1_1_U17 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE tmp_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op ctlz} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln702_1_fu_321_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE sub_ln702_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln702_fu_327_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE add_ln702 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setgt PRAGMA {} RTLNAME icmp_ln702_1_fu_342_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE icmp_ln702_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setgt} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln702_4_fu_348_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE sub_ln702_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto_pipe LATENCY 0 OPTYPE lshr PRAGMA {} RTLNAME lshr_ln702_2_fu_357_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE lshr_ln702_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op lshr} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln702_1_fu_363_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE and_ln702_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setne PRAGMA {} RTLNAME icmp_ln702_2_fu_368_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE icmp_ln702_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setne} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME phi_ln702_fu_374_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE phi_ln702 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE xor PRAGMA {} RTLNAME xor_ln702_fu_388_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE xor_ln702 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op xor} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE bitselect PRAGMA {} RTLNAME bitselect_1ns_86ns_7ns_1_1_1_U18 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE tmp_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op bitselect} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln702_fu_401_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE and_ln702 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln702_fu_407_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE or_ln702 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setgt PRAGMA {} RTLNAME icmp_ln702_3_fu_413_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE icmp_ln702_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setgt} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln702_1_fu_419_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE add_ln702_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_pipe LATENCY 0 OPTYPE lshr PRAGMA {} RTLNAME lshr_ln702_fu_436_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE lshr_ln702 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op lshr} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln702_2_fu_424_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE sub_ln702_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto_pipe LATENCY 0 OPTYPE shl PRAGMA {} RTLNAME shl_ln702_fu_448_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE shl_ln702 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op shl} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln702_1_fu_461_p3 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE select_ln702_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln702_2_fu_471_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE add_ln702_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln702_2_fu_499_p3 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE select_ln702_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln702_3_fu_507_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE sub_ln702_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln702_3_fu_516_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702} VARIABLE add_ln702_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 30 OPTYPE ddiv PRAGMA {} RTLNAME ddiv_64ns_64ns_64_31_no_dsp_1_U16 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:660} VARIABLE div_i LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op ddiv} VISIBLE true}} AREA {DSP 0 BRAM 4 URAM 0}} atan2_cordic_double_s {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln18_fu_238_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18} VARIABLE icmp_ln18 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setne PRAGMA {} RTLNAME icmp_ln18_1_fu_244_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18} VARIABLE icmp_ln18_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setne} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln18_fu_250_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18} VARIABLE and_ln18 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln18_2_fu_256_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18} VARIABLE icmp_ln18_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setne PRAGMA {} RTLNAME icmp_ln18_3_fu_262_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18} VARIABLE icmp_ln18_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setne} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln18_1_fu_268_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18} VARIABLE and_ln18_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln733_fu_274_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:733} VARIABLE icmp_ln733 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln733_1_fu_280_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:733} VARIABLE icmp_ln733_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln733_fu_286_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:733} VARIABLE and_ln733 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln737_fu_292_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:737} VARIABLE icmp_ln737 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln737_1_fu_298_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:737} VARIABLE icmp_ln737_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln737_fu_304_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:737} VARIABLE and_ln737 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln18_2_fu_319_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:18} VARIABLE and_ln18_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln18_3_fu_325_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:18} VARIABLE and_ln18_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln715_fu_357_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:787} VARIABLE icmp_ln715 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setne PRAGMA {} RTLNAME icmp_ln717_fu_383_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:787} VARIABLE icmp_ln717 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setne} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln717_fu_395_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:787} VARIABLE or_ln717 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setne PRAGMA {} RTLNAME icmp_ln717_1_fu_389_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:787} VARIABLE icmp_ln717_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setne} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln717_1_fu_399_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:787} VARIABLE or_ln717_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln717_fu_403_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:787} VARIABLE and_ln717 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE dcmp PRAGMA {} RTLNAME dcmp_64ns_64ns_1_2_no_dsp_1_U25 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:787} VARIABLE tmp_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dcmp} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME and_ln717_1_fu_409_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:787} VARIABLE and_ln717_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE xor PRAGMA {} RTLNAME xor_ln793_fu_436_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:793} VARIABLE xor_ln793 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op xor} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE xor PRAGMA {} RTLNAME xor_ln797_fu_469_p2 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:797} VARIABLE xor_ln797 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op xor} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln780_fu_492_p3 SOURCE {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:780} VARIABLE select_ln780 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false}} AREA {DSP 0 BRAM 4 URAM 0}} equalStep_baseline {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln34_fu_156_p2 SOURCE ../src/equalStep_baseline.cpp:34 VARIABLE icmp_ln34 LOOP VITIS_LOOP_34_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln34_fu_162_p2 SOURCE ../src/equalStep_baseline.cpp:34 VARIABLE add_ln34 LOOP VITIS_LOOP_34_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln35_fu_180_p2 SOURCE ../src/equalStep_baseline.cpp:35 VARIABLE icmp_ln35 LOOP VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln35_fu_186_p2 SOURCE ../src/equalStep_baseline.cpp:35 VARIABLE add_ln35 LOOP VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME dmul_64ns_64ns_64_5_max_dsp_1_U30 SOURCE ../src/equalStep_baseline.cpp:47 VARIABLE add_ln47 LOOP VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL maxdsp LATENCY 4 OPTYPE dmul PRAGMA {} RTLNAME dmul_64ns_64ns_64_5_max_dsp_1_U30 SOURCE ../src/equalStep_baseline.cpp:48 VARIABLE mul LOOP VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 11 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dmul} VISIBLE true} {BINDTYPE op ID {} IMPL maxdsp LATENCY 4 OPTYPE dmul PRAGMA {} RTLNAME dmul_64ns_64ns_64_5_max_dsp_1_U31 SOURCE ../src/equalStep_baseline.cpp:48 VARIABLE mul1 LOOP VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 11 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dmul} VISIBLE true} {BINDTYPE op ID {} IMPL fulldsp LATENCY 4 OPTYPE dadd PRAGMA {} RTLNAME dadddsub_64ns_64ns_64_5_full_dsp_1_U29 SOURCE ../src/equalStep_baseline.cpp:48 VARIABLE add LOOP VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 3 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dadd} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 29 OPTYPE dsqrt PRAGMA {} RTLNAME dsqrt_64ns_64ns_64_30_no_dsp_1_U32 SOURCE ../src/equalStep_baseline.cpp:48 VARIABLE tmp_6 LOOP VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op dsqrt} VISIBLE true}} AREA {DSP 25 BRAM 4 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.545 seconds; current allocated memory: 265.414 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for equalStep_baseline.
+INFO: [VLOG 209-307] Generating Verilog RTL for equalStep_baseline.
+Execute       syn_report -model equalStep_baseline -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 86.41 MHz
+Command     autosyn done; 8.263 sec.
+Command   csynth_design done; 26.796 sec.
 Execute   close_project 
 Execute     close_solution 
 Execute       cleanup_all 
@@ -862,12 +1569,12 @@ Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pk
 Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
 Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
 Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
-Command           ap_source done; 0.155 sec.
+Command           ap_source done; 0.21 sec.
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tk8.6/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command         ap_source done; 0.344 sec.
+Command         ap_source done; 0.417 sec.
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
@@ -1119,13 +1826,37 @@ Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgI
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
-Command         ap_source done; 0.154 sec.
+Command         ap_source done; 0.241 sec.
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tk8.6/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command       ap_source done; 0.679 sec.
-INFO-FLOW: Workspace C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls opened at Sat Mar 07 14:42:57 -0700 2026
+Command       ap_source done; 0.914 sec.
+INFO-FLOW: Workspace C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls opened at Wed Mar 11 18:46:46 -0700 2026
+Execute       source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute       set_part xc7z020-clg400-1 
+Execute         create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/2025.1/Vitis\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command         create_platform done; 1.553 sec.
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.113 sec.
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_compile -quiet -complex-mul-dsp=0 
+Command       set_part done; 1.709 sec.
 Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Execute       send_msg_by_id INFO @200-2174@%s%s component C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg 
@@ -1151,6 +1882,10 @@ Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=../TestData' from C:/U
 INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(12)
 Execute         add_files -tb C:/Users/seanr/vitis_projects/fpp_project/TestData 
 INFO: [HLS 200-10] Adding test bench file 'C:/Users/seanr/vitis_projects/fpp_project/TestData' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=../TestData_small' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData_small' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(13)
+Execute         add_files -tb C:/Users/seanr/vitis_projects/fpp_project/TestData_small 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/seanr/vitis_projects/fpp_project/TestData_small' to the project
 Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=equalStep_baseline' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(7) 
 INFO: [HLS 200-1465] Applying config ini 'syn.top=equalStep_baseline' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(7)
 Execute         set_top equalStep_baseline 
@@ -1162,11 +1897,7 @@ Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from C:/
 INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(1)
 Execute         set_part xc7z020clg400-1 
 Execute           create_platform xc7z020clg400-1 -board  
-DBG:HLSDevice: Trying to load device library: C:/Xilinx/2025.1/Vitis\lib\win64.o\xv_hlsvwrap.dll
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
-Command           create_platform done; 1.318 sec.
+Command           create_platform done; 0.226 sec.
 Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
@@ -1179,35 +1910,134 @@ Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/ut
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command           ap_source done; 0.102 sec.
+Command           ap_source done; 0.108 sec.
 Execute           ap_part_info -name xc7z020-clg400-1 -data info 
 Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 1.458 sec.
+Command         set_part done; 0.375 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'clock=16ns' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying config ini 'clock=16ns' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(14)
+Execute         create_clock -period 16ns 
+Execute           ap_set_clock -name default -period 16 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 16ns.
 Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(5) 
 INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(5)
 Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 1.523 sec.
+Command       apply_ini done; 0.462 sec.
 Execute       write_component -config C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg 
 Execute         send_msg_by_id INFO @200-2176@%s C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/vitis-comp.json 
 INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/vitis-comp.json
-Command     open_solution done; 2.248 sec.
-Command   open_component done; 2.255 sec.
+Command     open_solution done; 3.146 sec.
+Command   open_component done; 3.153 sec.
 Execute   apply_ini C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/config.cmdline -iscmdline 
-Execute   ::AP::init_summary_file csim 
+Execute   ::AP::init_summary_file cosim 
 Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
-Execute   csim_design 
-INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     send_msg_by_id INFO @200-2036@%s debug 
-INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute   cosim_design 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.115 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=16.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/cosimDB.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
 Execute     ap_part_info -name xc7z020-clg400-1 -data info 
-Execute     source run_sim.tcl 
-Command     ap_source done; 113.132 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 114.795 sec.
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -Wno-unknown-pragmas -Wno-unknown-pragmas -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ --target=x86_64-w64-windows-gnu -D__USE_XOPEN2K8 -I C:/Xilinx/2025.1/Vitis/include -I include C:/Users/seanr/vitis_projects/fpp_project/test/tb_equalStep.cpp -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/./sim/autowrap/testbench/tb_equalStep.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/tb_equalStep.cpp.clang.autosim-tb.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/tb_equalStep.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/seanr/vitis_projects/fpp_project/test/tb_equalStep.cpp C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/./sim/autowrap/testbench/tb_equalStep.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/./sim/autowrap/testbench/tb_equalStep.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/./sim/autowrap/testbench/tb_equalStep.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.072 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ --target=x86_64-w64-windows-gnu -D__USE_XOPEN2K8 -I C:/Xilinx/2025.1/Vitis/include -I include C:/Users/seanr/vitis_projects/fpp_project/src/equalStep_baseline.cpp -o C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/./sim/autowrap/testbench/equalStep_baseline.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt > C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.cpp.clang.autosim-tb.out.log 2> C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/seanr/vitis_projects/fpp_project/src/equalStep_baseline.cpp C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/./sim/autowrap/testbench/equalStep_baseline.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/./sim/autowrap/testbench/equalStep_baseline.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/./sim/autowrap/testbench/equalStep_baseline.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 0.207 sec.
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 1.461 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.DependenceCheck.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     source C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/.autopilot/db/equalStep_baseline.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 539.66 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command   cosim_design done; 612.544 sec.
 Execute   close_project 
 Execute     close_solution 
 Execute       cleanup_all 

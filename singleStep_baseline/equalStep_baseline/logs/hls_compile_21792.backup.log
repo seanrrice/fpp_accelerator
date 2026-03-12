@@ -1,0 +1,227 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/equalStep_baseline.cpp' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/seanr/vitis_projects/fpp_project/src/equalStep_baseline.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/equalStep_baseline.h' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/seanr/vitis_projects/fpp_project/include/equalStep_baseline.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/stb_image.h' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/seanr/vitis_projects/fpp_project/include/stb_image.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../test/tb_equalStep.cpp' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/seanr/vitis_projects/fpp_project/test/tb_equalStep.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/seanr/vitis_projects/fpp_project/TestData' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=equalStep_baseline' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=15ns' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(13)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 3 seconds. Elapsed time: 7.57 seconds; current allocated memory: 165.184 MB.
+INFO: [HLS 200-10] Analyzing design file '../src/equalStep_baseline.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.401 seconds; current allocated memory: 167.449 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 53,786 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,143 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,538 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,424 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 700 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 632 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 626 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 626 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 626 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 634 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 643 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'void cordic_::cordic_circ_v1<88, 1, 0, 0, 89, 4, 86, 1>(ap_fixed<89, 4, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<89, 4, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<86, 1, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700:5)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.46.55.64.73.82)' into 'fp_struct<double>::to_double() const (.52.61.70.79)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.52.61.70.79)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_abs<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_abs.h:13:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:648:0)
+INFO: [HLS 214-178] Inlining function 'cordic_::atan_traits<double>::div(double, double)' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:648:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:648:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double cordic_::atan2_cordic_Q1<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:711:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.46.55.64.73.82)' into 'double cordic_::atan2_cordic_Q1<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:711:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double cordic_::atan2_cordic_Q1<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:711:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'double generic_abs<double>(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'double cordic_::atan2_cordic_Q1<double>(double, double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'atan2' into 'equalStep_baseline(unsigned short const (*) [1080][1920], double (*) [1920], double (*) [1920])' (../src/equalStep_baseline.cpp:22:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:138:2 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_40_4> at ../src/equalStep_baseline.cpp:40:30 
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 22.938 seconds; current allocated memory: 167.645 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.009 seconds; current allocated memory: 167.645 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.317 seconds; current allocated memory: 167.645 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'cordic_::atan2_cordic<double>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'cordic_::atan2_cordic<double>' () automatically.
+WARNING: [SYNCHK 200-23] C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.122 seconds; current allocated memory: 167.645 MB.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'cordic_::atan2_cordic<double>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'cordic_::atan2_cordic<double>' () automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'cordic_::atan2_generic<double>'... converting 8 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.245 seconds; current allocated memory: 167.645 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.261 seconds; current allocated memory: 174.238 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'equalStep_baseline' ...
+WARNING: [SYN 201-103] Legalizing function name 'atan2_generic<double>_Pipeline_1' to 'atan2_generic_double_Pipeline_1'.
+WARNING: [SYN 201-103] Legalizing function name 'atan2_generic<double>' to 'atan2_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'atan2_cordic<double>' to 'atan2_cordic_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_4'.
+WARNING: [HLS 200-880] The II Violation in module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' (loop 'VITIS_LOOP_40_4'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('Phi_t1_write_ln37', ../src/equalStep_baseline.cpp:37) of variable 'Phi_t1', ../src/equalStep_baseline.cpp:43 on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37 and 'load' operation 64 bit ('Phi_t1_load', ../src/equalStep_baseline.cpp:43) on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' (loop 'VITIS_LOOP_40_4'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('Phi_t1_write_ln37', ../src/equalStep_baseline.cpp:37) of variable 'Phi_t1', ../src/equalStep_baseline.cpp:43 on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37 and 'load' operation 64 bit ('Phi_t1_load', ../src/equalStep_baseline.cpp:43) on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' (loop 'VITIS_LOOP_40_4'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('Phi_t1_write_ln37', ../src/equalStep_baseline.cpp:37) of variable 'Phi_t1', ../src/equalStep_baseline.cpp:43 on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37 and 'load' operation 64 bit ('Phi_t1_load', ../src/equalStep_baseline.cpp:43) on local variable 'Phi_t1', ../src/equalStep_baseline.cpp:37.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 18, loop 'VITIS_LOOP_40_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.086 seconds; current allocated memory: 179.199 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 180.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'atan2_generic_double_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'ashr' operation 89 bit ('x_s') to 'store' operation 0 bit ('a_1_write_ln700') of variable 'y' on local variable 'a' (combination delay: 11.5724 ns) to honor II or Latency constraint in region 'Loop 1'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
+WARNING: [HLS 200-871] Estimated clock period (11.572 ns) exceeds the target (target clock period: 15.000 ns, clock uncertainty: 4.050 ns, effective delay budget: 10.950 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'atan2_generic_double_Pipeline_1' consists of the following:
+	'load' operation 89 bit ('a_load') on local variable 'a' [23]  (0.000 ns)
+	'ashr' operation 89 bit ('x_s') [38]  (4.691 ns)
+	'sub' operation 89 bit ('sub_ln101_1') [41]  (4.236 ns)
+	'select' operation 89 bit ('y') [43]  (1.058 ns)
+	'store' operation 0 bit ('a_1_write_ln700') of variable 'y' on local variable 'a' [60]  (1.588 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 181.074 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.052 seconds; current allocated memory: 181.090 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'atan2_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.801 seconds; current allocated memory: 181.637 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 181.992 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'atan2_cordic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 183.168 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 183.402 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'equalStep_baseline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.128 seconds; current allocated memory: 183.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.051 seconds; current allocated memory: 183.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4' pipeline 'VITIS_LOOP_40_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'uitodp_32ns_64_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'equalStep_baseline_Pipeline_VITIS_LOOP_40_4'.
+INFO: [RTMG 210-279] Implementing memory 'equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_sin_k_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'equalStep_baseline_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_cos_k_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.242 seconds; current allocated memory: 186.902 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'atan2_generic_double_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'atan2_generic_double_Pipeline_1' pipeline 'Loop 1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'atan2_generic_double_Pipeline_1'.
+INFO: [RTMG 210-279] Implementing memory 'equalStep_baseline_atan2_generic_double_Pipeline_1_cordic_ctab_table_128_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.421 seconds; current allocated memory: 189.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'atan2_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_86ns_7ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ctlz_86_86_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_31_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'atan2_generic_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.487 seconds; current allocated memory: 191.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'atan2_cordic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'atan2_cordic_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.668 seconds; current allocated memory: 193.945 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'equalStep_baseline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/imStack' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/wrappedPhase' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/mod_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'equalStep_baseline' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_30_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'equalStep_baseline'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.748 seconds; current allocated memory: 197.109 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.154 seconds; current allocated memory: 203.785 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.835 seconds; current allocated memory: 207.598 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for equalStep_baseline.
+INFO: [VLOG 209-307] Generating Verilog RTL for equalStep_baseline.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 86.41 MHz
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 6 seconds. Total elapsed time: 48.056 seconds; peak allocated memory: 207.695 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 54s

@@ -5,8 +5,10 @@
 #include <cstdint>
 
 #define NSTEPS 5
-#define M 1080
-#define N 1920
+//#define M 1080
+//#define N 1920
+#define M 64        //small test size for co-sim
+#define N 64
 
 void equalStep_baseline(
     const uint16_t imStack[NSTEPS][M][N],

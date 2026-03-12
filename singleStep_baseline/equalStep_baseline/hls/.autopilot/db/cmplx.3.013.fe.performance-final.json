@@ -1,0 +1,45 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "equalStep_baseline.cpp",
+    "fileloc": 18,
+    "instructions": 38,
+    "loads": {
+      "G": 2,
+      "T": 1
+    },
+    "memory_accesses": 3,
+    "name": "equalStep_baseline",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 626
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "to_ieee",
+    "total_instructions": 5
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 11,
+    "memory_accesses": 0,
+    "name": "generic_copysign<double>",
+    "total_instructions": 11
+  }
+}

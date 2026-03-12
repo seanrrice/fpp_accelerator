@@ -1,0 +1,147 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'atan2_generic_double_Pipeline_1'" level="0">
+<item name = "Date">Wed Mar 11 18:45:58 2026
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">equalStep_baseline</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">16.00 ns, 11.572 ns, 4.32 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">91, 91, 1.456 us, 1.456 us, 89, 89, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">89, 89, 3, 1, 1, 88, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 1520, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">4, -, 0, 0, -</column>
+<column name="Multiplexer">-, -, 0, 63, -</column>
+<column name="Register">-, -, 370, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">1, 0, ~0, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="cordic_ctab_table_128_U">atan2_generic_double_Pipeline_1_cordic_ctab_table_128_ROM_AUTO_1R, 4, 0, 0, 0, 128, 126, 1, 16128</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln101_1_fu_216_p2">+, 0, 0, 96, 89, 89</column>
+<column name="add_ln101_2_fu_280_p2">+, 0, 0, 93, 86, 86</column>
+<column name="add_ln101_fu_190_p2">+, 0, 0, 96, 89, 89</column>
+<column name="add_ln138_fu_145_p2">+, 0, 0, 14, 7, 1</column>
+<column name="b_2_fu_252_p2">+, 0, 0, 92, 85, 85</column>
+<column name="sub_ln101_1_fu_210_p2">-, 0, 0, 96, 89, 89</column>
+<column name="sub_ln101_2_fu_274_p2">-, 0, 0, 93, 86, 86</column>
+<column name="sub_ln101_fu_184_p2">-, 0, 0, 96, 89, 89</column>
+<column name="x_s_fu_204_p2">ashr, 0, 0, 282, 89, 89</column>
+<column name="y_s_fu_178_p2">ashr, 0, 0, 282, 89, 89</column>
+<column name="icmp_ln138_fu_139_p2">icmp, 0, 0, 14, 7, 7</column>
+<column name="x_fu_196_p3">select, 0, 0, 89, 1, 89</column>
+<column name="y_fu_222_p3">select, 0, 0, 89, 1, 89</column>
+<column name="z_fu_286_p3">select, 0, 0, 86, 1, 86</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="a_1_fu_68">9, 2, 89, 178</column>
+<column name="a_2_fu_72">9, 2, 86, 172</column>
+<column name="a_fu_64">9, 2, 89, 178</column>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_k_2">9, 2, 7, 14</column>
+<column name="k_fu_76">9, 2, 7, 14</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="a_1_fu_68">89, 0, 89, 0</column>
+<column name="a_2_fu_72">86, 0, 86, 0</column>
+<column name="a_fu_64">89, 0, 89, 0</column>
+<column name="add_reg_345">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="b_2_reg_350">85, 0, 85, 0</column>
+<column name="icmp_ln138_reg_336">1, 0, 1, 0</column>
+<column name="k_2_reg_331">7, 0, 7, 0</column>
+<column name="k_fu_76">7, 0, 7, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, atan2_generic&lt;double&gt;_Pipeline_1, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, atan2_generic&lt;double&gt;_Pipeline_1, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, atan2_generic&lt;double&gt;_Pipeline_1, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, atan2_generic&lt;double&gt;_Pipeline_1, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, atan2_generic&lt;double&gt;_Pipeline_1, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, atan2_generic&lt;double&gt;_Pipeline_1, return value</column>
+<column name="y_1">in, 89, ap_none, y_1, scalar</column>
+<column name="zext_ln681">in, 86, ap_none, zext_ln681, scalar</column>
+<column name="z_2_out">out, 86, ap_vld, z_2_out, pointer</column>
+<column name="z_2_out_ap_vld">out, 1, ap_vld, z_2_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

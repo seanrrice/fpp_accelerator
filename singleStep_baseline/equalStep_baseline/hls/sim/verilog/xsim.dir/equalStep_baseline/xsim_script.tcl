@@ -1,0 +1,1 @@
+xsim {equalStep_baseline} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=equalStep_baseline_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {equalStep_baseline.tcl}

@@ -1,0 +1,69 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline'.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/equalStep_baseline.cpp' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/seanr/vitis_projects/fpp_project/src/equalStep_baseline.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/equalStep_baseline.h' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/seanr/vitis_projects/fpp_project/include/equalStep_baseline.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/stb_image.h' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/seanr/vitis_projects/fpp_project/include/stb_image.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../test/tb_equalStep.cpp' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/seanr/vitis_projects/fpp_project/test/tb_equalStep.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/seanr/vitis_projects/fpp_project/TestData' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=equalStep_baseline' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=16ns' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(13)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 16ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/seanr/vitis_projects/fpp_project/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling tb_equalStep.cpp_pre.cpp.tb.cpp
+cosim.tv.mk:90: recipe for target 'obj/tb_equalStep.cpp_pre.cpp.tb.o' failed
+In file included from C:/Users/seanr/vitis_projects/fpp_project/test/tb_equalStep.cpp:12:
+C:/Users/seanr/vitis_projects/fpp_project/test/../include/stb_image.h:3443:18: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+        if (((m) == 0xda)) {
+             ~~~~^~~~~~~
+C:/Users/seanr/vitis_projects/fpp_project/test/../include/stb_image.h:3443:18: note: remove extraneous parentheses around the comparison to silence this warning
+        if (((m) == 0xda)) {
+            ~    ^      ~
+C:/Users/seanr/vitis_projects/fpp_project/test/../include/stb_image.h:3443:18: note: use '=' to turn this equality comparison into an assignment
+        if (((m) == 0xda)) {
+                 ^~
+                 =
+C:/Users/seanr/vitis_projects/fpp_project/test/../include/stb_image.h:3454:23: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+        else if (((m) == 0xdc)) {
+                  ~~~~^~~~~~~
+C:/Users/seanr/vitis_projects/fpp_project/test/../include/stb_image.h:3454:23: note: remove extraneous parentheses around the comparison to silence this warning
+        else if (((m) == 0xdc)) {
+                 ~    ^      ~
+C:/Users/seanr/vitis_projects/fpp_project/test/../include/stb_image.h:3454:23: note: use '=' to turn this equality comparison into an assignment
+        else if (((m) == 0xdc)) {
+                      ^~
+                      =
+C:/Users/seanr/vitis_projects/fpp_project/test/../include/stb_image.h:3586:62: error: cannot initialize a parameter of type '__attribute__((__vector_size__(4 * sizeof(short)))) short' (vector of 4 'short' values) with an rvalue of type '__v8hi' (vector of 8 'short' values)
+        __m128i prev = ((__m128i)__builtin_ia32_vec_set_v4hi((__v8hi)(__m128i)(prv0), (int)(t1), (int)(0)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/seanr/vitis_projects/fpp_project/test/../include/stb_image.h:3587:62: error: cannot initialize a parameter of type '__attribute__((__vector_size__(4 * sizeof(short)))) short' (vector of 4 'short' values) with an rvalue of type '__v8hi' (vector of 8 'short' values)
+        __m128i next = ((__m128i)__builtin_ia32_vec_set_v4hi((__v8hi)(__m128i)(nxt0), (int)(3 * in_near[i + 8] + in_far[i + 8]), (int)(7)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+2 warnings and 2 errors generated.
+make: *** [obj/tb_equalStep.cpp_pre.cpp.tb.o] Error 1
+ERROR: [COSIM 212-317] C++ compile error.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 3 seconds. Total elapsed time: 16.249 seconds; peak allocated memory: 233.039 MB.

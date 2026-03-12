@@ -1,0 +1,7 @@
+Running: xsim.dir/equalStep_baseline/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=equalStep_baseline_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb equalStep_baseline.wdb -simrunnum 0 -socket 64792
+Design successfully loaded
+Design Loading Memory Usage: 32900 KB (Peak: 32900 KB)
+Design Loading CPU Usage: 140 ms
+Simulation completed
+Simulation Memory Usage: 57476 KB (Peak: 57476 KB)
+Simulation CPU Usage: 310546 ms

@@ -1,0 +1,198 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "2",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "equalStep_baseline.cpp",
+    "fileloc": 18,
+    "instructions": 55,
+    "loads": {
+      "G": 2,
+      "T": 1
+    },
+    "memory_accesses": 3,
+    "name": "equalStep_baseline",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 2143
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "10",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 494,
+    "instructions": 5,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "to_double",
+    "total_instructions": 21
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "x_hls_utils.h",
+    "fileloc": 475,
+    "instructions": 16,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 0,
+    "name": "data",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 16
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 456,
+    "instructions": 8,
+    "memory_accesses": 0,
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 8
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "x_hls_utils.h",
+    "fileloc": 512,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "__signbit",
+    "total_instructions": 3
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "atan2double.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "atan2",
+    "total_instructions": 2088
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "11 11 7",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 12,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "generic_copysign<double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 51
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "11",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "hls_isnan.h",
+    "fileloc": 16,
+    "instructions": 13,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 0,
+    "name": "generic_isnan<double>",
+    "total_instructions": 21
+  },
+  "5": {
+    "basicblocks": 4,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "x_hls_utils.h",
+    "fileloc": 503,
+    "instructions": 11,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "mantissa",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 11
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "7",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "hls_nan.h",
+    "fileloc": 10,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "generic_nan<double>",
+    "total_instructions": 25
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "to_ieee",
+    "total_instructions": 23
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "3",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "hls_abs.h",
+    "fileloc": 13,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "generic_abs<double>",
+    "total_instructions": 53
+  },
+  "9": {
+    "basicblocks": 3,
+    "calls": "11",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "hls_isinf.h",
+    "fileloc": 16,
+    "instructions": 13,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 0,
+    "name": "generic_isinf<double>",
+    "total_instructions": 21
+  }
+}

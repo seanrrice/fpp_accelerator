@@ -8,6 +8,7 @@
 #include <vector>
 #include <algorithm>
 
+#define STBI_NO_SIMD                 //to avoid cosim compilation errors
 #define STB_IMAGE_IMPLEMENTATION
 #include "../include/stb_image.h"
 #include "../include/equalStep_baseline.h"
@@ -111,10 +112,10 @@ bool load_csv_double(const std::string& filename, std::vector<double>& out, int&
 }
 
 int main() {
-    constexpr int NDATASETS = 6;
+    constexpr int NDATASETS = 1;   // use 1 for cosim testing on TestData_small, use 6 for full dataset testing
 
     // You may need to adjust this path depending on csim working directory
-    const std::string data_dir = "./TestData";
+    const std::string data_dir = "./TestData_small";
 
     //Global error accumulators
     double global_max_phase = 0.0;
@@ -141,6 +142,7 @@ int main() {
 
         std::string first_name = data_dir + "/stack_" + std::to_string(ds) + "_0.png";
         if (!load_png_grayscale_u16(first_name, first_img, width, height)) {
+            std::cout << "Error 1 occurred \n";
             return 1;
         }
 
@@ -173,6 +175,7 @@ int main() {
 
             std::string fname = data_dir + "/stack_" + std::to_string(ds) + "_" + std::to_string(k) + ".png";
             if (!load_png_grayscale_u16(fname, img, w, h)) {
+                std::cout << "Error 2 occurred. \n";
                 return 1;
             }
             if (w != nCols || h != nRows) {
@@ -197,9 +200,11 @@ int main() {
         std::string mod_name = data_dir + "/mod_" + std::to_string(ds) + ".csv";
 
         if (!load_csv_double(phi_name, phi_ref, phi_rows, phi_cols)) {
+            std::cout << "Error 3 occurred. \n";
             return 1;
         }
         if (!load_csv_double(mod_name, mod_ref, mod_rows, mod_cols)) {
+            std::cout << "Error 4 occurred. \n";
             return 1;
         }
 

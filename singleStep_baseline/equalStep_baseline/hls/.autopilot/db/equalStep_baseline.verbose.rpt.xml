@@ -1,0 +1,158 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'equalStep_baseline'" level="0">
+<item name = "Date">Wed Mar 11 18:46:00 2026
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">equalStep_baseline</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">16.00 ns, 11.572 ns, 4.32 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">319617, 868481, 5.114 ms, 13.896 ms, 319618, 868482, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_fu_109">equalStep_baseline_Pipeline_VITIS_LOOP_40_4, 34, 34, 0.544 us, 0.544 us, 24, 24, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_atan2_cordic_double_s_fu_123">atan2_cordic_double_s, 1, 135, 16.000 ns, 2.160 us, 1, 135, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_34_2">319616, 868480, 4994 ~ 13570, -, -, 64, no</column>
+<column name=" + VITIS_LOOP_35_3">4992, 13568, 78 ~ 212, -, -, 64, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 70, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">4, 25, 3089, 7603, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 335, -</column>
+<column name="Register">-, -, 373, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">1, 11, 3, 15, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_atan2_cordic_double_s_fu_123">atan2_cordic_double_s, 4, 0, 1370, 5072, 0</column>
+<column name="dadddsub_64ns_64ns_64_5_full_dsp_1_U29">dadddsub_64ns_64ns_64_5_full_dsp_1, 0, 3, 445, 1149, 0</column>
+<column name="dmul_64ns_64ns_64_5_max_dsp_1_U30">dmul_64ns_64ns_64_5_max_dsp_1, 0, 11, 299, 566, 0</column>
+<column name="dmul_64ns_64ns_64_5_max_dsp_1_U31">dmul_64ns_64ns_64_5_max_dsp_1, 0, 11, 299, 566, 0</column>
+<column name="dsqrt_64ns_64ns_64_30_no_dsp_1_U32">dsqrt_64ns_64ns_64_30_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="grp_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_fu_109">equalStep_baseline_Pipeline_VITIS_LOOP_40_4, 0, 0, 676, 250, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln34_fu_162_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln35_fu_186_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln47_fu_201_p2">+, 0, 0, 12, 12, 12</column>
+<column name="icmp_ln34_fu_156_p2">icmp, 0, 0, 15, 7, 8</column>
+<column name="icmp_ln35_fu_180_p2">icmp, 0, 0, 15, 7, 8</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">201, 46, 1, 46</column>
+<column name="grp_fu_131_ce">14, 3, 1, 3</column>
+<column name="grp_fu_131_opcode">20, 4, 2, 8</column>
+<column name="grp_fu_131_p0">20, 4, 64, 256</column>
+<column name="grp_fu_131_p1">20, 4, 64, 256</column>
+<column name="grp_fu_135_ce">14, 3, 1, 3</column>
+<column name="grp_fu_135_p0">14, 3, 64, 192</column>
+<column name="grp_fu_135_p1">14, 3, 64, 192</column>
+<column name="i_fu_60">9, 2, 7, 14</column>
+<column name="j_reg_98">9, 2, 7, 14</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln34_reg_257">7, 0, 7, 0</column>
+<column name="add_ln35_reg_275">7, 0, 7, 0</column>
+<column name="add_ln47_reg_285">12, 0, 12, 0</column>
+<column name="add_reg_311">64, 0, 64, 0</column>
+<column name="ap_CS_fsm">45, 0, 45, 0</column>
+<column name="grp_atan2_cordic_double_s_fu_123_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_equalStep_baseline_Pipeline_VITIS_LOOP_40_4_fu_109_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_fu_60">7, 0, 7, 0</column>
+<column name="j_reg_98">7, 0, 7, 0</column>
+<column name="mul1_reg_306">64, 0, 64, 0</column>
+<column name="mul_reg_301">64, 0, 64, 0</column>
+<column name="tmp_1_reg_267">6, 0, 12, 6</column>
+<column name="tmp_6_reg_316">64, 0, 64, 0</column>
+<column name="trunc_ln34_reg_262">6, 0, 6, 0</column>
+<column name="trunc_ln47_reg_280">6, 0, 6, 0</column>
+<column name="zext_ln47_1_reg_296">12, 0, 64, 52</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, equalStep_baseline, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, equalStep_baseline, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, equalStep_baseline, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, equalStep_baseline, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, equalStep_baseline, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, equalStep_baseline, return value</column>
+<column name="imStack_address0">out, 15, ap_memory, imStack, array</column>
+<column name="imStack_ce0">out, 1, ap_memory, imStack, array</column>
+<column name="imStack_q0">in, 16, ap_memory, imStack, array</column>
+<column name="wrappedPhase_address0">out, 12, ap_memory, wrappedPhase, array</column>
+<column name="wrappedPhase_ce0">out, 1, ap_memory, wrappedPhase, array</column>
+<column name="wrappedPhase_we0">out, 1, ap_memory, wrappedPhase, array</column>
+<column name="wrappedPhase_d0">out, 64, ap_memory, wrappedPhase, array</column>
+<column name="mod_r_address0">out, 12, ap_memory, mod_r, array</column>
+<column name="mod_r_ce0">out, 1, ap_memory, mod_r, array</column>
+<column name="mod_r_we0">out, 1, ap_memory, mod_r, array</column>
+<column name="mod_r_d0">out, 64, ap_memory, mod_r, array</column>
+</table>
+</item>
+</section>
+</profile>
