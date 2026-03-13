@@ -11,9 +11,9 @@
 #define N 64
 
 void equalStep_baseline(
-    const uint16_t imStack[NSTEPS][M][N],
-    double wrappedPhase[M][N],
-    double mod[M][N]
+    uint16_t imStack[NSTEPS*M*N],
+    double wrappedPhase[M*N],
+    double mod[M*N]
 );
 
 #endif

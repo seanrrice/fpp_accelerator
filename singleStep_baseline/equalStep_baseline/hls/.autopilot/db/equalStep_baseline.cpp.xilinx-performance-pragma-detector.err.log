@@ -1,6 +1,0 @@
-In file included from C:\Users\seanr\vitis_projects\fpp_project\singleStep_baseline\..\src\equalStep_baseline.cpp:1:
-In file included from C:\Users\seanr\vitis_projects\fpp_project\singleStep_baseline\..\src/../include/equalStep_baseline.h:5:
-In file included from C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\cstdint:9:
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\yvals_core.h:571:2: error: STL1000: Unexpected compiler version, expected Clang 11.0.0 or newer.
-#error STL1000: Unexpected compiler version, expected Clang 11.0.0 or newer.
- ^

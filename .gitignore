@@ -12,6 +12,8 @@ TestData/
 #Ignore logs folder and log files
 /logs
 .log
+.cache
+.db
 
 #Ignore lock files
 .lock
@@ -22,3 +24,8 @@ TestData/
 
 _ide/logs
 _ide/.wsdata
+
+hls
+logs
+
+TestData

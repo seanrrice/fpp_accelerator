@@ -128,9 +128,9 @@ int main() {
 // IMPORTANT:
 // Use static arrays that match the HLS top function 
 // ========================================================
-    static uint16_t imStack_hw[NSTEPS][M][N];
-    static double phi_out[M][N];
-    static double mod_out[M][N];
+    static uint16_t imStack_hw[NSTEPS*M*N];
+    static double phi_out[M*N];
+    static double mod_out[M*N];
 
     //Dataset loop
     for (int ds = 0; ds < NDATASETS; ds++) {
@@ -162,10 +162,8 @@ int main() {
         }
 
         //Copy first image into HLS input array
-        for (int i = 0; i < nRows; i++) {
-            for (int j = 0; j < nCols; j++) {
-                imStack_hw[0][i][j] = first_img[static_cast<size_t>(i) * nCols + j];
-            }
+        for (size_t i = 0; i < MN; i++) {
+            imStack_hw[i*NSTEPS] = first_img[i];
         }
 
         //Load remaining images to stack
@@ -183,10 +181,8 @@ int main() {
                 return 1;
             }
            
-            for (int i = 0; i < nRows; i++) {
-                for (int j = 0; j < nCols; j++) {
-                    imStack_hw[k][i][j] = img[static_cast<size_t>(i) * nCols + j];
-                }
+            for (size_t i = 0; i < MN; i++) {
+                imStack_hw[i*NSTEPS + k] = img[i];
             }
         }
 
@@ -229,19 +225,15 @@ int main() {
         double sse_mod = 0.0;
 
         //Compare HLS output to reference
-        for (int i = 0; i < nRows; i++) {
-            for (int j = 0; j < nCols; j++) {
-                size_t p = static_cast<size_t>(i) * nCols + j;
+        for (int i = 0; i < MN; i++) {
+            double e_phase = wrapToPi(phi_out[i] - phi_ref[i]);
+            double e_mod = mod_out[i] - mod_ref[i];
 
-                double e_phase = wrapToPi(phi_out[i][j] - phi_ref[p]);
-                double e_mod = mod_out[i][j] - mod_ref[p];
+            max_phase_error = std::max(max_phase_error, std::abs(e_phase));
+            max_mod_error = std::max(max_mod_error, std::abs(e_mod));
 
-                max_phase_error = std::max(max_phase_error, std::abs(e_phase));
-                max_mod_error = std::max(max_mod_error, std::abs(e_mod));
-
-                sse_phase += e_phase * e_phase;
-                sse_mod += e_mod * e_mod;
-            }
+            sse_phase += e_phase * e_phase;
+            sse_mod += e_mod * e_mod;
         }
         
         double rmse_phase = std::sqrt(sse_phase / static_cast<double> (MN));

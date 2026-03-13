@@ -16,36 +16,32 @@
 
 
 void equalStep_baseline(
-    const uint16_t imStack[NSTEPS][M][N],    //16 or 8 bit pictures?
-    double wrappedPhase[M][N], 
-    double mod[M][N]
+    uint16_t imStack[NSTEPS*M*N],    //16 or 8 bit pictures?
+    double wrappedPhase[M*N], 
+    double mod[M*N]
 ) {
-
+    
     double sin_k[NSTEPS];
     double cos_k[NSTEPS];
+    
+    #pragma HLS ARRAY_PARTITION variable=sin_k type=complete
+    #pragma HLS ARRAY_PARTITION variable=cos_k type=complete
 
     // precompute sin and cos values
-    for (int k = 0; k < NSTEPS; k++) {
+    sin_loop: for (size_t k = 0; k < NSTEPS; k++) {
+        #pragma HLS UNROLL
         sin_k[k] = std::sin(2.0 * M_PI * k / NSTEPS);
         cos_k[k] = std::cos(2.0 * M_PI * k / NSTEPS);
     }
 
     // for each pixel, compute wrapped phase and modulation
-    for (int i = 0; i < M; i++) {
-        for (int j = 0; j < N; j++) {
-            
-            double Phi_t1 = 0.0;
-            double Phi_t2 = 0.0;
-            
-            for (int k = 0; k < NSTEPS; k++) {
-
-                double val = (double)imStack[k][i][j];
-                Phi_t1 += val * sin_k[k];
-                Phi_t2 += val * cos_k[k];
-
-            }
-            wrappedPhase[i][j] = std::atan2(Phi_t1, Phi_t2);
-            mod[i][j] = std::sqrt(Phi_t1 * Phi_t1 + Phi_t2 * Phi_t2);
-        }
+    wrap_loop: for (int i = 0; i < M*N; i++) {
+        #pragma HLS PIPELINE II=NSTEPS
+        uint16_t* pixel_data = &imStack[i*NSTEPS];
+        double Phi_t1 = pixel_data[0] * sin_k[0] + pixel_data[1] * sin_k[1] + pixel_data[2] * sin_k[2] + pixel_data[3] * sin_k[3] + pixel_data[4] * sin_k[4];
+        double Phi_t2 = pixel_data[0] * cos_k[0] + pixel_data[1] * cos_k[1] + pixel_data[2] * cos_k[2] + pixel_data[3] * cos_k[3] + pixel_data[4] * cos_k[4];
+        
+        wrappedPhase[i] = std::atan2(Phi_t1, Phi_t2);
+        mod[i] = std::sqrt(Phi_t1 * Phi_t1 + Phi_t2 * Phi_t2);
     }
 }
