@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\equalStep_baseline.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/14/26 14:21:12",
+ "timestampMillis": "1773523272314",
+ "buildStep": {
+  "cmdId": "6d8f7219-c2fb-4b38-b63c-61333cb084b7",
+  "name": "vitis-run",
+  "logFile": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\logs\\equalStep_baseline.steps.log",
+  "commandLine": "T:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config T:\\Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\hls_config.cfg --work_dir equalStep_baseline ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "T:\\Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\hls_config.cfg",
+   "--work_dir",
+   "equalStep_baseline"
+  ],
+  "iniFiles": [],
+  "cwd": "T:\\Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/14/26 14:21:12",
+ "timestampMillis": "1773523272315",
+ "status": {
+  "cmdId": "6d8f7219-c2fb-4b38-b63c-61333cb084b7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/14/26 14:21:18",
+ "timestampMillis": "1773523278298",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "equalStep_baseline",
+     "file": "T:/Documents\\ECE574\\Project\\equalStep_ip.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "T:/Documents\\ECE574\\Project\\fpp_accelerator\\src\\equalStep_baseline.cpp",
+     "T:/Documents\\ECE574\\Project\\fpp_accelerator\\include\\equalStep_baseline.h",
+     "T:/Documents\\ECE574\\Project\\fpp_accelerator\\include\\stb_image.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/14/26 14:21:18",
+ "timestampMillis": "1773523278299",
+ "buildStep": {
+  "cmdId": "1d1eca30-c191-4fbf-8a9d-5efe0385b7fd",
+  "name": "",
+  "logFile": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "T:\\Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/14/26 14:21:18",
+ "timestampMillis": "1773523278300",
+ "status": {
+  "cmdId": "1d1eca30-c191-4fbf-8a9d-5efe0385b7fd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/14/26 14:21:34",
+ "timestampMillis": "1773523294093",
+ "status": {
+  "cmdId": "1d1eca30-c191-4fbf-8a9d-5efe0385b7fd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/14/26 14:21:34",
+ "timestampMillis": "1773523294218",
+ "status": {
+  "cmdId": "6d8f7219-c2fb-4b38-b63c-61333cb084b7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/14/26 14:21:34",
+ "timestampMillis": "1773523294218",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/14/26 14:21:34",
+ "timestampMillis": "1773523294219",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
