@@ -13,9 +13,7 @@
 #include "../include/stb_image.h"
 #include "../include/equalStep_baseline.h"
 
-#ifndef M_PI
-#define M_PI 3.14159265358979323846
-#endif
+
 
 static inline double wrapToPi(double x) {
 	while (x > M_PI) x -= 2.0 * M_PI;
@@ -63,7 +61,7 @@ bool load_png_grayscale_u16(const std::string& filename,
 // 
 // Load CSV into flat double vector
 // 
-bool load_csv_double(const std::string& filename, std::vector<double>& out, int& rows, int& cols)
+bool load_csv_fixed(const std::string& filename, std::vector<phase_t>& out, int& rows, int& cols)
 {
     std::ifstream fin(filename);
     if (!fin.is_open()) {
@@ -129,8 +127,8 @@ int main() {
 // Use static arrays that match the HLS top function 
 // ========================================================
     static uint16_t imStack_hw[NSTEPS*M*N];
-    static double phi_out[M*N];
-    static double mod_out[M*N];
+    static phase_t phi_out[M*N];
+    static mod_t mod_out[M*N];
 
     //Dataset loop
     for (int ds = 0; ds < NDATASETS; ds++) {
@@ -187,7 +185,7 @@ int main() {
         }
 
         //Load reference CSV outputs
-        std::vector<double> phi_ref, mod_ref;
+        std::vector<phase_t> phi_ref, mod_ref;
 
         int phi_rows = 0, phi_cols = 0;
         int mod_rows = 0, mod_cols = 0;
@@ -195,11 +193,11 @@ int main() {
         std::string phi_name = data_dir + "/phi_" + std::to_string(ds) + ".csv";
         std::string mod_name = data_dir + "/mod_" + std::to_string(ds) + ".csv";
 
-        if (!load_csv_double(phi_name, phi_ref, phi_rows, phi_cols)) {
+        if (!load_csv_fixed(phi_name, phi_ref, phi_rows, phi_cols)) {
             std::cout << "Error 3 occurred. \n";
             return 1;
         }
-        if (!load_csv_double(mod_name, mod_ref, mod_rows, mod_cols)) {
+        if (!load_csv_fixed(mod_name, mod_ref, mod_rows, mod_cols)) {
             std::cout << "Error 4 occurred. \n";
             return 1;
         }
@@ -214,9 +212,16 @@ int main() {
             std::cerr << "Mod CSV dimensions do not match image size.\n";
             return 1;
         }
-
+        hls::stream<pixel_chunk_t> imStack_stream;
+        for (int i=0; i<MN; i++){
+            pixel_chunk_t chunk;
+            for (int j=0; j<NSTEPS; j++){
+                chunk[j] = imStack_hw[i*NSTEPS + j];
+            }
+            imStack_stream.write(chunk);
+        }
         //Run the HLS function
-        equalStep_baseline(imStack_hw, phi_out, mod_out);
+        equalStep_baseline(imStack_stream, phi_out, mod_out);
 
         //Initialize per-dataset error metrics
         double max_phase_error = 0.0;

@@ -1,9 +1,4 @@
 #include "../include/equalStep_baseline.h"
-#include <cmath>
-
-#ifndef M_PI
-#define M_PI 3.14159265358979323846
-#endif
 
 /*
 * imStack is an nsteps x M x N array of images
@@ -16,13 +11,18 @@
 
 
 void equalStep_baseline(
-    uint16_t imStack[NSTEPS*M*N],    //16 or 8 bit pictures?
-    double wrappedPhase[M*N], 
-    double mod[M*N]
+    hls::stream<pixel_chunk_t>& imStack,    //16 bit pictures
+    phase_t wrappedPhase[M*N], 
+    mod_t mod[M*N]
 ) {
+    #pragma HLS INTERFACE axis      port=imStack
+    #pragma HLS INTERFACE bram      port=wrappedPhase
+    #pragma HLS INTERFACE bram      port=mod
+    #pragma HLS INTERFACE s_axilite port=return
+
     
-    double sin_k[NSTEPS];
-    double cos_k[NSTEPS];
+    coeff_t sin_k[NSTEPS];
+    coeff_t cos_k[NSTEPS];
     
     #pragma HLS ARRAY_PARTITION variable=sin_k type=complete
     #pragma HLS ARRAY_PARTITION variable=cos_k type=complete
@@ -35,13 +35,17 @@ void equalStep_baseline(
     }
 
     // for each pixel, compute wrapped phase and modulation
-    wrap_loop: for (int i = 0; i < M*N; i++) {
-        #pragma HLS PIPELINE II=NSTEPS
-        uint16_t* pixel_data = &imStack[i*NSTEPS];
-        double Phi_t1 = pixel_data[0] * sin_k[0] + pixel_data[1] * sin_k[1] + pixel_data[2] * sin_k[2] + pixel_data[3] * sin_k[3] + pixel_data[4] * sin_k[4];
-        double Phi_t2 = pixel_data[0] * cos_k[0] + pixel_data[1] * cos_k[1] + pixel_data[2] * cos_k[2] + pixel_data[3] * cos_k[3] + pixel_data[4] * cos_k[4];
+    wrap_loop: for (size_t i = 0; i < M*N; i++) {
+        #pragma HLS PIPELINE II=1
+        pixel_chunk_t pixel_data = imStack.read(); // Get next chunk of pixels from the data stream
+        accum_t Phi_t1 = 0; accum_t Phi_t2 = 0;
+        phi_loop: for (size_t j = 0; j < NSTEPS; j++) {
+            #pragma HLS UNROLL
+            Phi_t1 += pixel_data[j] * sin_k[j];
+            Phi_t2 += pixel_data[j] * cos_k[j];
+        }
         
-        wrappedPhase[i] = std::atan2(Phi_t1, Phi_t2);
-        mod[i] = std::sqrt(Phi_t1 * Phi_t1 + Phi_t2 * Phi_t2);
+        wrappedPhase[i] = hls::atan2(Phi_t1, Phi_t2);
+        mod[i] = hls::sqrt(Phi_t1 * Phi_t1 + Phi_t2 * Phi_t2);
     }
 }
