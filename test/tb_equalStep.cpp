@@ -212,16 +212,27 @@ int main() {
             std::cerr << "Mod CSV dimensions do not match image size.\n";
             return 1;
         }
-        hls::stream<pixel_chunk_t> imStack_stream;
+        hls::stream<in_t> imStack_stream;
         for (int i=0; i<MN; i++){
-            pixel_chunk_t chunk;
-            for (int j=0; j<NSTEPS; j++){
-                chunk[j] = imStack_hw[i*NSTEPS + j];
+            in_t beat;
+            for (int j=0; j<CHUNK_SIZE; j++){
+                beat.data[j] = (j < NSTEPS) ? imStack_hw[i*NSTEPS + j] : (uint16_t)0;
             }
-            imStack_stream.write(chunk);
+            beat.last = (i == (int)MN - 1);
+            beat.keep = -1; beat.strb = -1;
+            imStack_stream.write(beat);
         }
+
+        hls::stream<out_t> out;
         //Run the HLS function
-        equalStep_baseline(imStack_stream, phi_out, mod_out);
+        equalStep_baseline(imStack_stream, out);
+
+        for (int i=0; i<MN; i++){
+            out_t o = out.read();
+            out_data_t d = o.data;
+            phi_out[i].range(19,0) = d(19,0);
+            mod_out[i].range(31,0) = d(51,20);
+        }
 
         //Initialize per-dataset error metrics
         double max_phase_error = 0.0;

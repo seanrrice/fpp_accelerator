@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "03/14/26 14:22:22",
- "timestampMillis": "1773523342736",
+ "dateTimestamp": "04/15/26 00:50:06",
+ "timestampMillis": "1776239406950",
  "buildStep": {
-  "cmdId": "89be4a32-32ce-4811-ab46-fd5af22effca",
+  "cmdId": "106fe2f5-eb83-4611-b4cb-82082f472720",
   "name": "vitis-run",
   "logFile": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\logs\\equalStep_baseline.steps.log",
   "commandLine": "T:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config T:\\Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\hls_config.cfg --work_dir equalStep_baseline ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/14/26 14:22:22",
- "timestampMillis": "1773523342736",
+ "dateTimestamp": "04/15/26 00:50:06",
+ "timestampMillis": "1776239406950",
  "status": {
-  "cmdId": "89be4a32-32ce-4811-ab46-fd5af22effca",
+  "cmdId": "106fe2f5-eb83-4611-b4cb-82082f472720",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "03/14/26 14:22:28",
- "timestampMillis": "1773523348445",
+ "dateTimestamp": "04/15/26 00:50:09",
+ "timestampMillis": "1776239409426",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -82,10 +82,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "03/14/26 14:22:28",
- "timestampMillis": "1773523348446",
+ "dateTimestamp": "04/15/26 00:50:09",
+ "timestampMillis": "1776239409427",
  "buildStep": {
-  "cmdId": "45f2a8fb-dc2d-4013-a990-f461c177a8cf",
+  "cmdId": "c841d702-48ae-4db0-813c-c828ea9a7b99",
   "name": "",
   "logFile": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\hls.log",
   "commandLine": "",
@@ -98,10 +98,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/14/26 14:22:28",
- "timestampMillis": "1773523348446",
+ "dateTimestamp": "04/15/26 00:50:09",
+ "timestampMillis": "1776239409427",
  "status": {
-  "cmdId": "45f2a8fb-dc2d-4013-a990-f461c177a8cf",
+  "cmdId": "c841d702-48ae-4db0-813c-c828ea9a7b99",
   "state": "CS_RUNNING"
  }
 }
@@ -109,8 +109,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/14/26 14:22:28",
- "timestampMillis": "1773523348448",
+ "dateTimestamp": "04/15/26 00:50:09",
+ "timestampMillis": "1776239409428",
  "report": {
   "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\verilog",
   "name": "",
@@ -123,8 +123,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/14/26 14:22:28",
- "timestampMillis": "1773523348449",
+ "dateTimestamp": "04/15/26 00:50:09",
+ "timestampMillis": "1776239409428",
  "report": {
   "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_syn.rpt",
   "name": "",
@@ -137,8 +137,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/14/26 14:22:28",
- "timestampMillis": "1773523348449",
+ "dateTimestamp": "04/15/26 00:50:09",
+ "timestampMillis": "1776239409428",
  "report": {
   "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_syn.xml",
   "name": "",
@@ -151,8 +151,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/14/26 14:22:28",
- "timestampMillis": "1773523348449",
+ "dateTimestamp": "04/15/26 00:50:09",
+ "timestampMillis": "1776239409428",
  "report": {
   "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\verilog",
   "name": "",
@@ -165,8 +165,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/14/26 14:22:28",
- "timestampMillis": "1773523348450",
+ "dateTimestamp": "04/15/26 00:50:09",
+ "timestampMillis": "1776239409429",
  "report": {
   "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_impl.rpt",
   "name": "",
@@ -179,8 +179,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/14/26 14:22:28",
- "timestampMillis": "1773523348450",
+ "dateTimestamp": "04/15/26 00:50:09",
+ "timestampMillis": "1776239409429",
  "report": {
   "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_impl.xml",
   "name": "",
@@ -193,8 +193,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/14/26 14:28:34",
- "timestampMillis": "1773523714441",
+ "dateTimestamp": "04/15/26 00:50:27",
+ "timestampMillis": "1776239427843",
  "report": {
   "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls",
   "name": "",
@@ -207,8 +207,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/14/26 14:28:34",
- "timestampMillis": "1773523714442",
+ "dateTimestamp": "04/15/26 00:50:27",
+ "timestampMillis": "1776239427843",
  "report": {
   "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls",
   "name": "",
@@ -221,10 +221,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/14/26 14:28:34",
- "timestampMillis": "1773523714442",
+ "dateTimestamp": "04/15/26 00:50:27",
+ "timestampMillis": "1776239427844",
  "status": {
-  "cmdId": "45f2a8fb-dc2d-4013-a990-f461c177a8cf",
+  "cmdId": "c841d702-48ae-4db0-813c-c828ea9a7b99",
   "state": "CS_PASSED"
  }
 }
@@ -232,19 +232,19 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/14/26 14:28:34",
- "timestampMillis": "1773523714658",
+ "dateTimestamp": "04/15/26 00:50:27",
+ "timestampMillis": "1776239427909",
  "status": {
-  "cmdId": "89be4a32-32ce-4811-ab46-fd5af22effca",
-  "state": "CS_PASSED"
+  "cmdId": "106fe2f5-eb83-4611-b4cb-82082f472720",
+  "state": "CS_FAILED"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/14/26 14:28:34",
- "timestampMillis": "1773523714662",
+ "dateTimestamp": "04/15/26 00:50:27",
+ "timestampMillis": "1776239427909",
  "report": {
   "path": "",
   "name": "",
@@ -257,8 +257,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/14/26 14:28:34",
- "timestampMillis": "1773523714662",
+ "dateTimestamp": "04/15/26 00:50:27",
+ "timestampMillis": "1776239427909",
  "report": {
   "path": "",
   "name": "",
