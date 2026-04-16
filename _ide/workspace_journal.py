@@ -4,3 +4,7 @@ import vitis
 client = vitis.create_client()
 client.set_workspace(path="fpp_accelerator")
 
+vitis.dispose()
+
+vitis.dispose()
+

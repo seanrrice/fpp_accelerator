@@ -14,10 +14,7 @@
 #endif
 
 #define NSTEPS 5
-#define M 1080
-#define N 1920
-// #define M 64        //small test size for co-sim
-// #define N 64
+#define MAX_PIXELS 0x400000
 
 constexpr int next_pow2(int n) {
     int p = 1;
@@ -28,29 +25,23 @@ constexpr int CHUNK_SIZE = next_pow2(NSTEPS);
 
 typedef hls::vector<uint16_t, CHUNK_SIZE> pixel_chunk_t;
 
-// typedef ap_fixed<32,18> accum_t;
-// typedef ap_fixed<18,2> coeff_t;
-// typedef ap_fixed<20,4> phase_t;
-// typedef ap_fixed<24,18> mod_t;
+typedef ap_uint<12> pixel_12_t;
+typedef ap_fixed<28,16> mod_12_t;
+typedef ap_fixed<29,17> accum_t;
+typedef ap_fixed<58,34> square_t;
+typedef ap_fixed<59,35> square_sum_t;
+typedef ap_fixed<14,2> coeff_t;
+typedef ap_fixed<18,3> phase_t;
+typedef ap_fixed<36,20> mod_t;
 
-typedef ap_fixed<40,22> accum_t;
-typedef ap_fixed<18,2> coeff_t;
-typedef ap_fixed<20,4> phase_t;
-typedef ap_fixed<32,22> mod_t;
-
-struct phase_mod_t {
-    phase_t wrappedPhase;  // ap_fixed<20,4>
-    mod_t   mod;           // ap_fixed<24,18>
-};
-
-// typedef hls::axis<phase_mod_t,0,0,0> out_t;
 typedef ap_uint<64> out_data_t;
 typedef hls::axis<out_data_t,0,0,0> out_t;
 typedef hls::axis<pixel_chunk_t,0,0,0> in_t;
 
 void equalStep_baseline(
     hls::stream<in_t>& imStack,
-    hls::stream<out_t>& out
+    hls::stream<out_t>& out,
+    uint32_t num_pixels
 );
 
 #endif
