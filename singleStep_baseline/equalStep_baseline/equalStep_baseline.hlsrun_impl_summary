@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\equalStep_baseline.hlsrun_impl_summary",
+ "thisFile": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\equalStep_baseline.hlsrun_impl_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,34 +9,34 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "04/15/26 00:50:06",
- "timestampMillis": "1776239406950",
+ "dateTimestamp": "04/30/26 12:56:35",
+ "timestampMillis": "1777578995933",
  "buildStep": {
-  "cmdId": "106fe2f5-eb83-4611-b4cb-82082f472720",
+  "cmdId": "b3df5b5a-03ef-4031-a884-4a627c17077c",
   "name": "vitis-run",
-  "logFile": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\logs\\equalStep_baseline.steps.log",
-  "commandLine": "T:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config T:\\Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\hls_config.cfg --work_dir equalStep_baseline ",
+  "logFile": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\logs\\equalStep_baseline.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\hls_config.cfg --work_dir equalStep_baseline ",
   "args": [
    "--mode",
    "hls",
    "--impl",
    "--config",
-   "T:\\Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\hls_config.cfg",
+   "C:\\Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\hls_config.cfg",
    "--work_dir",
    "equalStep_baseline"
   ],
   "iniFiles": [],
-  "cwd": "T:\\Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline"
+  "cwd": "C:\\Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/15/26 00:50:06",
- "timestampMillis": "1776239406950",
+ "dateTimestamp": "04/30/26 12:56:35",
+ "timestampMillis": "1777578995934",
  "status": {
-  "cmdId": "106fe2f5-eb83-4611-b4cb-82082f472720",
+  "cmdId": "b3df5b5a-03ef-4031-a884-4a627c17077c",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "04/15/26 00:50:09",
- "timestampMillis": "1776239409426",
+ "dateTimestamp": "04/30/26 12:56:43",
+ "timestampMillis": "1777579003313",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -64,9 +64,9 @@
      "uuid": ""
     },
     "sources": [
-     "T:/Documents\\ECE574\\Project\\fpp_accelerator\\src\\equalStep_baseline.cpp",
-     "T:/Documents\\ECE574\\Project\\fpp_accelerator\\include\\equalStep_baseline.h",
-     "T:/Documents\\ECE574\\Project\\fpp_accelerator\\include\\stb_image.h"
+     "C:/Users\\seanr\\vitis_projects\\fpp_project\\src\\equalStep_baseline.cpp",
+     "C:/Users\\seanr\\vitis_projects\\fpp_project\\include\\equalStep_baseline.h",
+     "C:/Users\\seanr\\vitis_projects\\fpp_project\\include\\stb_image.h"
     ],
     "psSources": [],
     "cuNames": [],
@@ -75,33 +75,33 @@
     "freqUnits": ""
    }
   ],
-  "toolVersion": "2025.2"
+  "toolVersion": "2025.1"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "04/15/26 00:50:09",
- "timestampMillis": "1776239409427",
+ "dateTimestamp": "04/30/26 12:56:43",
+ "timestampMillis": "1777579003314",
  "buildStep": {
-  "cmdId": "c841d702-48ae-4db0-813c-c828ea9a7b99",
+  "cmdId": "c55fcc72-c093-4978-b142-108854ffd589",
   "name": "",
-  "logFile": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\hls.log",
+  "logFile": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\hls\\hls.log",
   "commandLine": "",
   "args": [],
   "iniFiles": [],
-  "cwd": "T:\\Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline"
+  "cwd": "C:\\Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/15/26 00:50:09",
- "timestampMillis": "1776239409427",
+ "dateTimestamp": "04/30/26 12:56:43",
+ "timestampMillis": "1777579003315",
  "status": {
-  "cmdId": "c841d702-48ae-4db0-813c-c828ea9a7b99",
+  "cmdId": "c55fcc72-c093-4978-b142-108854ffd589",
   "state": "CS_RUNNING"
  }
 }
@@ -109,10 +109,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/15/26 00:50:09",
- "timestampMillis": "1776239409428",
+ "dateTimestamp": "04/30/26 12:56:43",
+ "timestampMillis": "1777579003316",
  "report": {
-  "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\verilog",
+  "path": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\verilog",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_RTL_SYNTHESIS",
@@ -123,10 +123,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/15/26 00:50:09",
- "timestampMillis": "1776239409428",
+ "dateTimestamp": "04/30/26 12:56:43",
+ "timestampMillis": "1777579003317",
  "report": {
-  "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "path": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_syn.rpt",
   "name": "",
   "fileType": "TEXT",
   "reportType": "HLS_RTL_SYNTHESIS",
@@ -137,10 +137,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/15/26 00:50:09",
- "timestampMillis": "1776239409428",
+ "dateTimestamp": "04/30/26 12:56:43",
+ "timestampMillis": "1777579003318",
  "report": {
-  "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "path": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_syn.xml",
   "name": "",
   "fileType": "XML",
   "reportType": "HLS_RTL_SYNTHESIS",
@@ -151,10 +151,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/15/26 00:50:09",
- "timestampMillis": "1776239409428",
+ "dateTimestamp": "04/30/26 12:56:43",
+ "timestampMillis": "1777579003318",
  "report": {
-  "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\verilog",
+  "path": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\verilog",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_PLACE_AND_ROUTE",
@@ -165,10 +165,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/15/26 00:50:09",
- "timestampMillis": "1776239409429",
+ "dateTimestamp": "04/30/26 12:56:43",
+ "timestampMillis": "1777579003319",
  "report": {
-  "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "path": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_impl.rpt",
   "name": "",
   "fileType": "TEXT",
   "reportType": "HLS_PLACE_AND_ROUTE",
@@ -179,10 +179,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/15/26 00:50:09",
- "timestampMillis": "1776239409429",
+ "dateTimestamp": "04/30/26 12:56:43",
+ "timestampMillis": "1777579003319",
  "report": {
-  "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "path": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\hls\\impl\\report\\verilog\\export_impl.xml",
   "name": "",
   "fileType": "XML",
   "reportType": "HLS_PLACE_AND_ROUTE",
@@ -193,10 +193,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/15/26 00:50:27",
- "timestampMillis": "1776239427843",
+ "dateTimestamp": "04/30/26 13:05:44",
+ "timestampMillis": "1777579544211",
  "report": {
-  "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls",
+  "path": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_RTL_SYNTHESIS",
@@ -207,10 +207,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/15/26 00:50:27",
- "timestampMillis": "1776239427843",
+ "dateTimestamp": "04/30/26 13:05:44",
+ "timestampMillis": "1777579544253",
  "report": {
-  "path": "T:/Documents\\ECE574\\Project\\fpp_accelerator\\singleStep_baseline\\equalStep_baseline\\hls",
+  "path": "C:/Users\\seanr\\vitis_projects\\fpp_project\\singleStep_baseline\\equalStep_baseline\\hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_PLACE_AND_ROUTE",
@@ -221,10 +221,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/15/26 00:50:27",
- "timestampMillis": "1776239427844",
+ "dateTimestamp": "04/30/26 13:05:44",
+ "timestampMillis": "1777579544253",
  "status": {
-  "cmdId": "c841d702-48ae-4db0-813c-c828ea9a7b99",
+  "cmdId": "c55fcc72-c093-4978-b142-108854ffd589",
   "state": "CS_PASSED"
  }
 }
@@ -232,19 +232,19 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/15/26 00:50:27",
- "timestampMillis": "1776239427909",
+ "dateTimestamp": "04/30/26 13:05:45",
+ "timestampMillis": "1777579545289",
  "status": {
-  "cmdId": "106fe2f5-eb83-4611-b4cb-82082f472720",
-  "state": "CS_FAILED"
+  "cmdId": "b3df5b5a-03ef-4031-a884-4a627c17077c",
+  "state": "CS_PASSED"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/15/26 00:50:27",
- "timestampMillis": "1776239427909",
+ "dateTimestamp": "04/30/26 13:05:45",
+ "timestampMillis": "1777579545301",
  "report": {
   "path": "",
   "name": "",
@@ -257,8 +257,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/15/26 00:50:27",
- "timestampMillis": "1776239427909",
+ "dateTimestamp": "04/30/26 13:05:45",
+ "timestampMillis": "1777579545302",
  "report": {
   "path": "",
   "name": "",

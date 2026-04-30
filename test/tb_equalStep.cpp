@@ -13,6 +13,10 @@
 #include "../include/stb_image.h"
 #include "../include/equalStep_baseline.h"
 
+constexpr int M = 64;
+constexpr int N = 64;
+constexpr int MN = M * N;
+
 
 
 static inline double wrapToPi(double x) {
