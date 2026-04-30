@@ -225,13 +225,13 @@ int main() {
 
         hls::stream<out_t> out;
         //Run the HLS function
-        equalStep_baseline(imStack_stream, out);
+        equalStep_baseline(imStack_stream, out, static_cast<uint32_t>(MN));
 
         for (int i=0; i<MN; i++){
             out_t o = out.read();
             out_data_t d = o.data;
-            phi_out[i].range(19,0) = d(19,0);
-            mod_out[i].range(31,0) = d(51,20);
+            phi_out[i].range(17,0) = d(17,0);
+            mod_out[i].range(35,0) = d(53,18);
         }
 
         //Initialize per-dataset error metrics

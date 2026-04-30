@@ -1,10 +1,11 @@
-# 2026-04-15T00:56:04.169027500
+# 2026-04-30T12:23:59.030493800
 import vitis
 
 client = vitis.create_client()
-client.set_workspace(path="fpp_accelerator")
+client.set_workspace(path="fpp_project")
 
-vitis.dispose()
+comp = client.get_component(name="singleStep_baseline")
+comp.run(operation="C_SIMULATION")
 
-vitis.dispose()
+comp.run(operation="C_SIMULATION")
 
