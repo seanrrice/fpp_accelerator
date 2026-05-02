@@ -13,6 +13,7 @@
 #include "../include/stb_image.h"
 #include "../include/equalStep_baseline.h"
 
+
 constexpr int M = 64;
 constexpr int N = 64;
 constexpr int MN = M * N;
@@ -119,6 +120,11 @@ int main() {
     // You may need to adjust this path depending on csim working directory
     const std::string data_dir = "./TestData_small";
 
+    const uint32_t num_pixels = static_cast<uint32_t>(MN);
+    const uint32_t num_words = (num_pixels + LANES - 1) / LANES;
+
+
+
     //Global error accumulators
     double global_max_phase = 0.0;
     double global_max_mod = 0.0;
@@ -217,25 +223,50 @@ int main() {
             return 1;
         }
         hls::stream<in_t> imStack_stream;
-        for (int i=0; i<MN; i++){
+     
+        //Pack LANES pixels per input stream word
+        for (uint32_t word = 0; word < num_words; word++){
             in_t beat;
-            for (int j=0; j<CHUNK_SIZE; j++){
-                beat.data[j] = (j < NSTEPS) ? imStack_hw[i*NSTEPS + j] : (uint16_t)0;
+
+            for (int lane = 0; lane < LANES; lane++){
+                uint32_t pixel_idx = word * LANES + lane;
+
+                for (int k= 0; k < CHUNK_SIZE; k++){
+                    if (pixel_idx < num_pixels && k < NSTEPS){
+                        beat.data[lane][k] = imStack_hw[pixel_idx * NSTEPS + k];
+                    } else {
+                        beat.data[lane][k] = 0;
+                    }
+                }
+
             }
-            beat.last = (i == (int)MN - 1);
-            beat.keep = -1; beat.strb = -1;
+
+            beat.last = (word == num_words - 1);
+            beat.keep = -1;
+            beat.strb = -1;
+
             imStack_stream.write(beat);
         }
 
         hls::stream<out_t> out;
-        //Run the HLS function
-        equalStep_baseline(imStack_stream, out, static_cast<uint32_t>(MN));
 
-        for (int i=0; i<MN; i++){
+        //Run the HLS function
+        equalStep_baseline(imStack_stream, out, num_pixels);
+
+        // Unpack LANES pixels per output stream word
+        for (uint32_t word = 0; word < num_words; word++){
             out_t o = out.read();
-            out_data_t d = o.data;
-            phi_out[i].range(17,0) = d(17,0);
-            mod_out[i].range(35,0) = d(53,18);
+
+            for (int lane = 0; lane < LANES; lane++){
+                uint32_t pixel_idx = word * LANES + lane;
+
+                if (pixel_idx < num_pixels){
+                    one_pixel_out_t d = o.data[lane];
+
+                    phi_out[pixel_idx].range(17, 0) = d(17, 0);
+                    mod_out[pixel_idx].range(35, 0) = d(53, 18);
+                }
+            }
         }
 
         //Initialize per-dataset error metrics
@@ -245,7 +276,7 @@ int main() {
         double sse_mod = 0.0;
 
         //Compare HLS output to reference
-        for (int i = 0; i < MN; i++) {
+        for (size_t i = 0; i < MN; i++) {
             double e_phase = wrapToPi(phi_out[i] - phi_ref[i]);
             double e_mod = mod_out[i] - mod_ref[i];
 

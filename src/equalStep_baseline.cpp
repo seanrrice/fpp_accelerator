@@ -9,6 +9,40 @@
 * where each pixel is the wrapped phase of the pixels in the stack
 */
 
+//add a helper funciton for one pixel
+static one_pixel_out_t compute_one_pixel(
+    pixel_chunk_t pixel_data,
+    coeff_t sin_k[NSTEPS],
+    coeff_t cos_k[NSTEPS]
+) {
+    #pragma HLS inline
+
+    accum_t Phi_t1 = 0;
+    accum_t Phi_t2 = 0;
+
+    phi_loop: for (size_t j = 0; j < NSTEPS; j++){
+        #pragma HLS UNROLL
+        
+        pixel_12_t pix = pixel_data[j] >> 4;
+        Phi_t1 += pix * sin_k[j];
+        Phi_t2 += pix * cos_k[j]; 
+    }
+
+    phase_t p = hls::atan2(Phi_t1, Phi_t2);
+
+    square_t sq1 = Phi_t1 * Phi_t1;
+    square_t sq2 = Phi_t2 * Phi_t2;
+    square_sum_t sum_sq = sq1 + sq2;
+    mod_12_t m_sqrt = hls::sqrt(sum_sq);
+    mod_t m = m_sqrt << 4;
+
+    one_pixel_out_t packed = 0;
+    packed(17,0) = p.range(17,0);
+    packed(53, 18) = m.range(35,0);
+
+    return packed;
+}
+
 
 void equalStep_baseline(
     hls::stream<in_t>& imStack,    //16 bit pictures
@@ -20,6 +54,7 @@ void equalStep_baseline(
     #pragma HLS INTERFACE s_axilite port=num_pixels
     #pragma HLS INTERFACE s_axilite port=return
 
+    #pragma HLS ALLOCATION function instances=compute_one_pixel limit=2
     
     coeff_t sin_k[NSTEPS];
     coeff_t cos_k[NSTEPS];
@@ -34,34 +69,44 @@ void equalStep_baseline(
         cos_k[k] = std::cos(2.0 * M_PI * k / NSTEPS);
     }
 
+    uint32_t num_words = (num_pixels + LANES - 1) / LANES;
+
     // for each pixel, compute wrapped phase and modulation
-    wrap_loop: for (size_t i = 0; i < num_pixels; i++) {
+    wrap_loop: for (size_t i = 0; i < num_words; i++) {
         #pragma HLS PIPELINE II=1
-        #pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_PIXELS
-        pixel_chunk_t pixel_data = imStack.read().data; // Get next chunk of pixels from the data stream
-        accum_t Phi_t1 = 0; accum_t Phi_t2 = 0;
-        phi_loop: for (size_t j = 0; j < NSTEPS; j++) {
-            #pragma HLS UNROLL
-            pixel_12_t pix = pixel_data[j] >> 4;
-            Phi_t1 += pix * sin_k[j];
-            Phi_t2 += pix * cos_k[j];
+        #pragma HLS LOOP_TRIPCOUNT min=1 max=MAX_WORDS
+
+        in_t in_word = imStack.read();
+        input_lane_t pixels = in_word.data;
+
+        output_lane_t packed_out;
+
+
+        uint32_t pixel_idx0 = i * LANES;
+        uint32_t pixel_idx1 = i * LANES + 1;
+
+        one_pixel_out_t out0 = 0;
+        one_pixel_out_t out1 = 0;
+
+        if (pixel_idx0 < num_pixels) {
+            out0 = compute_one_pixel(pixels[0], sin_k, cos_k);
         }
-        
-        phase_t p = hls::atan2(Phi_t1, Phi_t2);
-        // float sum_sq_f =(float)((Phi_t1 * Phi_t1) + (Phi_t2 * Phi_t2));
-        // float m_sqrt = hls::sqrtf(sum_sq_f);
-        square_t sq1 = Phi_t1 * Phi_t1;
-        square_t sq2 = Phi_t2 * Phi_t2;
-        square_sum_t sum_sq = sq1 + sq2;
-        mod_12_t m_sqrt = hls::sqrt(sum_sq);
-        mod_t m = m_sqrt << 4;
-        out_data_t packed = 0;
-        packed(17,0) = p.range(17,0);
-        packed(53,18) = m.range(35,0);
+
+        if (pixel_idx1 < num_pixels) {
+            out1 = compute_one_pixel(pixels[1], sin_k, cos_k);
+        }
+
+        packed_out[0] = out0;
+        packed_out[1] = out1;
+
         out_t o;
-        o.data = packed;
-        o.last = (i==num_pixels - 1); o.keep = -1; o.strb = -1;
-        
+        o.data = packed_out;
+        o.last = (i == num_words - 1);
+        o.keep = -1;
+        o.strb = -1;
+
         out.write(o);
     }
+        
 }
+

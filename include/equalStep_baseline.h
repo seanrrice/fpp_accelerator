@@ -15,6 +15,10 @@
 
 #define NSTEPS 5
 #define MAX_PIXELS 0x400000
+#define MAX_WORDS ((MAX_PIXELS + LANES - 1) / LANES)
+
+// add a lane parameter
+#define LANES 2
 
 constexpr int next_pow2(int n) {
     int p = 1;
@@ -25,6 +29,12 @@ constexpr int CHUNK_SIZE = next_pow2(NSTEPS);
 
 typedef hls::vector<uint16_t, CHUNK_SIZE> pixel_chunk_t;
 
+// One input stream word now holds LANES pixels
+typedef hls::vector<pixel_chunk_t, LANES> input_lane_t;
+typedef ap_uint<64> one_pixel_out_t;
+typedef hls::vector<one_pixel_out_t, LANES> output_lane_t;
+
+
 typedef ap_uint<12> pixel_12_t;
 typedef ap_fixed<28,16> mod_12_t;
 typedef ap_fixed<29,17> accum_t;
@@ -34,9 +44,10 @@ typedef ap_fixed<14,2> coeff_t;
 typedef ap_fixed<18,3> phase_t;
 typedef ap_fixed<36,20> mod_t;
 
-typedef ap_uint<64> out_data_t;
-typedef hls::axis<out_data_t,0,0,0> out_t;
-typedef hls::axis<pixel_chunk_t,0,0,0> in_t;
+
+typedef hls::axis<input_lane_t,0,0,0> in_t;
+typedef hls::axis<output_lane_t,0,0,0> out_t;
+
 
 void equalStep_baseline(
     hls::stream<in_t>& imStack,
