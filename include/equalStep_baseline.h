@@ -18,7 +18,7 @@
 #define MAX_WORDS ((MAX_PIXELS + LANES - 1) / LANES)
 
 // add a lane parameter
-#define LANES 2
+#define LANES 4
 
 constexpr int next_pow2(int n) {
     int p = 1;

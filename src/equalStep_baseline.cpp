@@ -54,7 +54,7 @@ void equalStep_baseline(
     #pragma HLS INTERFACE s_axilite port=num_pixels
     #pragma HLS INTERFACE s_axilite port=return
 
-    #pragma HLS ALLOCATION function instances=compute_one_pixel limit=2
+    #pragma HLS ALLOCATION function instances=compute_one_pixel limit=4
     
     coeff_t sin_k[NSTEPS];
     coeff_t cos_k[NSTEPS];
@@ -81,23 +81,18 @@ void equalStep_baseline(
 
         output_lane_t packed_out;
 
+        lane_loop: for (int lane = 0; lane < LANES; lane++) {
+            #pragma HLS UNROLL
 
-        uint32_t pixel_idx0 = i * LANES;
-        uint32_t pixel_idx1 = i * LANES + 1;
+            uint32_t pixel_idx = i * LANES + lane;
 
-        one_pixel_out_t out0 = 0;
-        one_pixel_out_t out1 = 0;
-
-        if (pixel_idx0 < num_pixels) {
-            out0 = compute_one_pixel(pixels[0], sin_k, cos_k);
-        }
-
-        if (pixel_idx1 < num_pixels) {
-            out1 = compute_one_pixel(pixels[1], sin_k, cos_k);
-        }
-
-        packed_out[0] = out0;
-        packed_out[1] = out1;
+            if (pixel_idx < num_pixels) {
+                packed_out[lane] = compute_one_pixel(pixels[lane], sin_k, cos_k);
+            } else {
+                packed_out[lane] = 0;
+            }
+        }   
+        
 
         out_t o;
         o.data = packed_out;
