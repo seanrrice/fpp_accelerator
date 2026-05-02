@@ -1,0 +1,407 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline 
+INFO: [HLS 200-2176] Writing Vitis IDE component file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/equalStep_baseline.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/src/equalStep_baseline.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/equalStep_baseline.h' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/include/equalStep_baseline.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/stb_image.h' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/include/stb_image.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../test/tb_equalStep.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/test/tb_equalStep.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/TestData' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData_small' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/TestData_small' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=equalStep_baseline' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=7ns' from hls_config.cfg(14)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [HLS 200-1465] Applying config ini 'cosim.trace_level=all' from hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'package.output.file=T:\Documents\ECE574\Project\equalStep_ip' from hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'vivado.clock=7ns' from hls_config.cfg(17)
+INFO: [HLS 200-2176] Writing Vitis IDE component file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 8.901 seconds; current allocated memory: 163.586 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../src/equalStep_baseline.cpp' ... 
+WARNING: [HLS 207-7035] unexpected pragma parameter 'bundle' (../src/equalStep_baseline.cpp:79:67)
+WARNING: [HLS 207-7035] unexpected pragma parameter 'bundle' (../src/equalStep_baseline.cpp:80:70)
+WARNING: [HLS 207-7035] unexpected pragma parameter 'bundle' (../src/equalStep_baseline.cpp:81:61)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 41.346 seconds; current allocated memory: 171.477 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 200-1995] There were 119,127 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 29,564 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,970 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,474 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,290 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,196 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,196 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,208 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,419 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,415 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,411 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,359 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,123 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,055 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,058 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,134 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'phi_loop' is marked as complete unroll implied by the pipeline pragma (../src/equalStep_baseline.cpp:35:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_633_2' is marked as complete unroll implied by the pipeline pragma (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:633:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_629_1' is marked as complete unroll implied by the pipeline pragma (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:629:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_61_1' is marked as complete unroll implied by the pipeline pragma (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:61:22)
+INFO: [HLS 214-186] Unrolling loop 'phi_loop' (../src/equalStep_baseline.cpp:35:19) in function 'process_tile<1024, 3072>' completely with a factor of 5 (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-186] Unrolling loop 'phi_loop' (../src/equalStep_baseline.cpp:35:19) in function 'process_tile<1024, 2048>' completely with a factor of 5 (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-186] Unrolling loop 'phi_loop' (../src/equalStep_baseline.cpp:35:19) in function 'process_tile<1024, 1024>' completely with a factor of 5 (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-186] Unrolling loop 'phi_loop' (../src/equalStep_baseline.cpp:35:19) in function 'process_tile<1024, 0>' completely with a factor of 5 (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_633_2' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:633:23) in function 'cordic_apfixed::generic_atan2<32, 18>' completely with a factor of 33 (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:568:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_629_1' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:629:23) in function 'cordic_apfixed::generic_atan2<32, 18>' completely with a factor of 33 (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:568:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_61_1' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:61:22) in function 'cordic_apfixed::cordic_circ_apfixed<39, 3, 1>' completely with a factor of 39 (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:53:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'VITIS_LOOP_61_1' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:61:22) in function 'cordic_apfixed::cordic_circ_apfixed<39, 3, 1>' has been removed because the loop is unrolled completely (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:62:1)
+INFO: [HLS 214-178] Inlining function 'std::__array_traits<unsigned short, 5ul>::_S_ref(unsigned short const (&) [5], unsigned long)' into 'std::array<unsigned short, 5ul>::operator[](unsigned long)' (T:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<32, 3, (ap_q_mode)5, (ap_o_mode)3, 0> cordic_apfixed::generic_atan2<32, 18>(ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>) (.106)' into 'ap_fixed<32, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::atan2<32, 18>(ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\hls_math.h:1856:0)
+INFO: [HLS 214-178] Inlining function 'std::array<unsigned short, 5ul>::operator[](unsigned long)' into 'void process_tile<1024, 0>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<32, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::atan2<32, 18>(ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void process_tile<1024, 0>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0> hls::sqrt<65, 37>(ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void process_tile<1024, 0>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'std::array<unsigned short, 5ul>::operator[](unsigned long)' into 'void process_tile<1024, 1024>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<32, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::atan2<32, 18>(ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void process_tile<1024, 1024>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0> hls::sqrt<65, 37>(ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void process_tile<1024, 1024>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'std::array<unsigned short, 5ul>::operator[](unsigned long)' into 'void process_tile<1024, 2048>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<32, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::atan2<32, 18>(ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void process_tile<1024, 2048>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0> hls::sqrt<65, 37>(ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void process_tile<1024, 2048>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'std::array<unsigned short, 5ul>::operator[](unsigned long)' into 'void process_tile<1024, 3072>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<32, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::atan2<32, 18>(ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 18, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void process_tile<1024, 3072>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0> hls::sqrt<65, 37>(ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void process_tile<1024, 3072>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../src/equalStep_baseline.cpp:17:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'tile0_stream' with compact=bit mode in 80-bits (../src/equalStep_baseline.cpp:88:32)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'tile1_stream' with compact=bit mode in 80-bits (../src/equalStep_baseline.cpp:88:46)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'tile2_stream' with compact=bit mode in 80-bits (../src/equalStep_baseline.cpp:88:59)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'tile3_stream' with compact=bit mode in 80-bits (../src/equalStep_baseline.cpp:88:72)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'imStack' with compact=bit mode in 80-bits (../src/equalStep_baseline.cpp:77:0)
+INFO: [HLS 214-364] Automatically inlining function 'void cordic_apfixed::cordic_circ_apfixed<39, 3, 1>(ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&)' to improve effectiveness of pipeline pragma in function 'void process_tile<1024, 0>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:649:5)
+INFO: [HLS 214-364] Automatically inlining function 'ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0> sqrt_fixed<65, 37>(ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0>) (.94)' to improve effectiveness of pipeline pragma in function 'void process_tile<1024, 0>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\hls_math.h:1268:12)
+INFO: [HLS 214-364] Automatically inlining function 'void cordic_apfixed::cordic_circ_apfixed<39, 3, 1>(ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&)' to improve effectiveness of pipeline pragma in function 'void process_tile<1024, 1024>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:649:5)
+INFO: [HLS 214-364] Automatically inlining function 'ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0> sqrt_fixed<65, 37>(ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0>) (.94)' to improve effectiveness of pipeline pragma in function 'void process_tile<1024, 1024>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\hls_math.h:1268:12)
+INFO: [HLS 214-364] Automatically inlining function 'void cordic_apfixed::cordic_circ_apfixed<39, 3, 1>(ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&)' to improve effectiveness of pipeline pragma in function 'void process_tile<1024, 2048>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:649:5)
+INFO: [HLS 214-364] Automatically inlining function 'ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0> sqrt_fixed<65, 37>(ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0>) (.94)' to improve effectiveness of pipeline pragma in function 'void process_tile<1024, 2048>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\hls_math.h:1268:12)
+INFO: [HLS 214-364] Automatically inlining function 'void cordic_apfixed::cordic_circ_apfixed<39, 3, 1>(ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<39, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&)' to improve effectiveness of pipeline pragma in function 'void process_tile<1024, 3072>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:649:5)
+INFO: [HLS 214-364] Automatically inlining function 'ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0> sqrt_fixed<65, 37>(ap_fixed<65, 37, (ap_q_mode)5, (ap_o_mode)3, 0>) (.94)' to improve effectiveness of pipeline pragma in function 'void process_tile<1024, 3072>(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, ap_fixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, 18, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\hls_math.h:1268:12)
+WARNING: [HLS 214-475] Merging processes 'process_tile<1024, 3072>', 'process_tile<1024, 2048>', 'process_tile<1024, 1024>' and 'process_tile<1024, 0>' in function 'equalStep_baseline' due to writes on 'wrappedPhase' (../src/equalStep_baseline.cpp:77:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 13.284 seconds; current allocated memory: 174.406 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 174.406 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 184.078 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 191.527 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'equalStep_baseline' (../src/equalStep_baseline.cpp:73:1), detected/extracted 2 process function(s): 
+	 'split_stream'
+	 'Block_entry_wrappedPhase_wr_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/equalStep_baseline.cpp:32:1) to (../src/equalStep_baseline.cpp:31:16) in function 'process_tile<1024, 3072>'... converting 113 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/equalStep_baseline.cpp:32:1) to (../src/equalStep_baseline.cpp:31:16) in function 'process_tile<1024, 2048>'... converting 113 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/equalStep_baseline.cpp:32:1) to (../src/equalStep_baseline.cpp:31:16) in function 'process_tile<1024, 1024>'... converting 113 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/equalStep_baseline.cpp:32:1) to (../src/equalStep_baseline.cpp:31:16) in function 'process_tile<1024, 0>'... converting 113 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.94 seconds; current allocated memory: 222.195 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.607 seconds; current allocated memory: 310.789 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'equalStep_baseline' ...
+WARNING: [SYN 201-103] Legalizing function name 'process_tile<1024, 0>' to 'process_tile_1024_0_s'.
+WARNING: [SYN 201-103] Legalizing function name 'process_tile<1024, 1024>' to 'process_tile_1024_1024_s'.
+WARNING: [SYN 201-103] Legalizing function name 'process_tile<1024, 2048>' to 'process_tile_1024_2048_s'.
+WARNING: [SYN 201-103] Legalizing function name 'process_tile<1024, 3072>' to 'process_tile_1024_3072_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'split_stream_Pipeline_VITIS_LOOP_54_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_54_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.269 seconds; current allocated memory: 314.863 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 315.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'split_stream_Pipeline_VITIS_LOOP_59_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_59_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_59_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 315.988 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 315.992 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'split_stream_Pipeline_VITIS_LOOP_63_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_63_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_63_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 316.160 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 316.289 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'split_stream_Pipeline_VITIS_LOOP_67_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_67_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_67_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.621 seconds; current allocated memory: 316.293 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 316.293 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'split_stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 316.309 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 316.410 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'process_tile_1024_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'wrap_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 49, loop 'wrap_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.432 seconds; current allocated memory: 331.234 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.269 seconds; current allocated memory: 331.277 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'process_tile_1024_1024_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'wrap_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 49, loop 'wrap_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.546 seconds; current allocated memory: 337.590 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 337.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'process_tile_1024_2048_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'wrap_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 49, loop 'wrap_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.515 seconds; current allocated memory: 344.461 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.167 seconds; current allocated memory: 344.469 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'process_tile_1024_3072_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln38) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'wrap_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 49, loop 'wrap_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.509 seconds; current allocated memory: 350.199 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.169 seconds; current allocated memory: 350.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_wrappedPhase_wr_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.168 seconds; current allocated memory: 350.223 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 350.223 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'equalStep_baseline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 350.297 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 350.305 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'split_stream_Pipeline_VITIS_LOOP_54_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'split_stream_Pipeline_VITIS_LOOP_54_1' pipeline 'VITIS_LOOP_54_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'split_stream_Pipeline_VITIS_LOOP_54_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 351.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'split_stream_Pipeline_VITIS_LOOP_59_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'split_stream_Pipeline_VITIS_LOOP_59_2' pipeline 'VITIS_LOOP_59_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'split_stream_Pipeline_VITIS_LOOP_59_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.116 seconds; current allocated memory: 352.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'split_stream_Pipeline_VITIS_LOOP_63_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'split_stream_Pipeline_VITIS_LOOP_63_3' pipeline 'VITIS_LOOP_63_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'split_stream_Pipeline_VITIS_LOOP_63_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.327 seconds; current allocated memory: 352.590 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'split_stream_Pipeline_VITIS_LOOP_67_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'split_stream_Pipeline_VITIS_LOOP_67_4' pipeline 'VITIS_LOOP_67_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'split_stream_Pipeline_VITIS_LOOP_67_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 352.742 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'split_stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'split_stream'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 353.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_tile_1024_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'process_tile_1024_0_s' pipeline 'wrap_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'process_tile_1024_0_s' is 6994 from HDL expression: ((1'b0 == ap_block_pp0_stage0_subdone_grp0_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp0))
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_15ns_32ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_15ns_34s_34_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_16ns_32ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_16ns_33ns_34_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_16ns_34s_34_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_17ns_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_19_8_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_tile_1024_0_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.72 seconds; current allocated memory: 356.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_tile_1024_1024_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'process_tile_1024_1024_s' pipeline 'wrap_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'process_tile_1024_1024_s' is 6994 from HDL expression: ((1'b0 == ap_block_pp0_stage0_subdone_grp0_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp0))
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_15ns_32ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_15ns_34s_34_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_16ns_32ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_16ns_33ns_34_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_16ns_34s_34_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_17ns_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_19_8_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_tile_1024_1024_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.179 seconds; current allocated memory: 374.723 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_tile_1024_2048_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'process_tile_1024_2048_s' pipeline 'wrap_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'process_tile_1024_2048_s' is 6994 from HDL expression: ((1'b0 == ap_block_pp0_stage0_subdone_grp0_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp0))
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_15ns_32ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_15ns_34s_34_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_16ns_32ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_16ns_33ns_34_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_16ns_34s_34_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_17ns_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_19_8_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_tile_1024_2048_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.181 seconds; current allocated memory: 392.961 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_tile_1024_3072_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'process_tile_1024_3072_s' pipeline 'wrap_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'process_tile_1024_3072_s' is 6994 from HDL expression: ((1'b0 == ap_block_pp0_stage0_subdone_grp0_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_grp0))
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_15ns_32ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_15ns_34s_34_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_16ns_32ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_16ns_33ns_34_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_16ns_34s_34_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_17ns_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_19_8_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_tile_1024_3072_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.16 seconds; current allocated memory: 411.449 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_entry_wrappedPhase_wr_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_entry_wrappedPhase_wr_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.747 seconds; current allocated memory: 430.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'equalStep_baseline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/imStack' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/wrappedPhase' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/mod_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'equalStep_baseline' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'equalStep_baseline'.
+INFO: [RTMG 210-285] Implementing FIFO 'tile0_stream_U(equalStep_baseline_fifo_w80_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'tile1_stream_U(equalStep_baseline_fifo_w80_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'tile2_stream_U(equalStep_baseline_fifo_w80_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'tile3_stream_U(equalStep_baseline_fifo_w80_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Block_entry_wrappedPhase_wr_proc_U0_U(equalStep_baseline_start_for_Block_entry_wrappedPhase_wr_proc_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 433.301 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.079 seconds; current allocated memory: 434.984 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.43 seconds; current allocated memory: 454.121 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for equalStep_baseline.
+INFO: [VLOG 209-307] Generating Verilog RTL for equalStep_baseline.
+INFO: [HLS 200-789] **** Estimated Fmax: 195.69 MHz
+INFO: [HLS 200-112] Total CPU user time: 15 seconds. Total CPU system time: 4 seconds. Total elapsed time: 82.555 seconds; peak allocated memory: 454.176 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 27s

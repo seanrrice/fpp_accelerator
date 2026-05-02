@@ -1,0 +1,68 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline 
+INFO: [HLS 200-2176] Writing Vitis IDE component file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline'.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/equalStep_baseline.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/src/equalStep_baseline.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/equalStep_baseline.h' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/include/equalStep_baseline.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/stb_image.h' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/include/stb_image.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../test/tb_equalStep.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/test/tb_equalStep.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/TestData' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData_small' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/TestData_small' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=equalStep_baseline' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=9ns' from hls_config.cfg(14)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9ns.
+INFO: [HLS 200-1465] Applying config ini 'cosim.trace_level=all' from hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'package.output.file=T:\Documents\ECE574\Project\equalStep_ip' from hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'vivado.clock=7ns' from hls_config.cfg(17)
+INFO: [HLS 200-2176] Writing Vitis IDE component file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-503] Applying 'config_export -vivado_clock 7ns', using 7 ns in generated Vivado XDC
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Apr 15 00:12:07 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/hls_data.json outdir=T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/impl/ip srcdir=T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/impl/ip/misc
+INFO: Copied 14 verilog file(s) to T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/impl/ip/hdl/verilog
+INFO: Copied 12 vhdl file(s) to T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/impl/ip/drivers
+INFO: Import ports from HDL: T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/impl/ip/hdl/vhdl/equalStep_baseline.vhd (equalStep_baseline)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'T:/AMDDesignTools/2025.2/Vivado/data/ip'.
+INFO: Add axi4stream interface imStack
+INFO: Add axi4stream interface out_r
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/impl/ip/component.xml
+INFO: Created IP archive T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/impl/ip/xilinx_com_hls_equalStep_baseline_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 15 00:12:12 2026...
+INFO: [HLS 200-802] Generated output file T:/Documents/ECE574/Project/equalStep_ip.zip
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.919 seconds; peak allocated memory: 231.473 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 11s

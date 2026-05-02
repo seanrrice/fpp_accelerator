@@ -1,0 +1,244 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline 
+INFO: [HLS 200-2176] Writing Vitis IDE component file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/equalStep_baseline.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/src/equalStep_baseline.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/equalStep_baseline.h' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/include/equalStep_baseline.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/stb_image.h' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/include/stb_image.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../test/tb_equalStep.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/test/tb_equalStep.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/TestData' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData_small' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/TestData_small' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=equalStep_baseline' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=16ns' from hls_config.cfg(14)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 16ns.
+INFO: [HLS 200-1465] Applying config ini 'cosim.trace_level=all' from hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 5.284 seconds; current allocated memory: 162.633 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../src/equalStep_baseline.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.023 seconds; current allocated memory: 165.699 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 53,797 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 33,279 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11,123 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,993 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,628 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,623 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,623 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,623 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,623 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,623 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,555 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,555 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,555 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,555 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,557 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,030 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'void cordic_::cordic_circ_v1<88, 1, 0, 0, 89, 4, 86, 1>(ap_fixed<89, 4, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<89, 4, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<86, 1, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:700:5)
+INFO: [HLS 214-291] Loop 'phi_loop' is marked as complete unroll implied by the pipeline pragma (../src/equalStep_baseline.cpp:48:19)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:138:2)
+INFO: [HLS 214-186] Unrolling loop 'phi_loop' (../src/equalStep_baseline.cpp:48:19) in function 'equalStep_baseline' completely with a factor of 5 (../src/equalStep_baseline.cpp:23:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:138:2) in function 'cordic_::atan2_generic<double>' completely with a factor of 88 (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:648:0)
+INFO: [HLS 214-178] Inlining function 'std::__array_traits<unsigned short, 5ul>::_S_ref(unsigned short const (&) [5], unsigned long)' into 'std::array<unsigned short, 5ul>::operator[](unsigned long)' (T:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.46.55.64.73.82)' into 'fp_struct<double>::to_double() const (.52.61.70.79)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.52.61.70.79)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_nan<double>(char const*)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_abs<double>(double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_abs.h:13:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:648:0)
+INFO: [HLS 214-178] Inlining function 'cordic_::atan_traits<double>::div(double, double)' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:648:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'double cordic_::atan2_generic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:648:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double cordic_::atan2_cordic_Q1<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:711:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.46.55.64.73.82)' into 'double cordic_::atan2_cordic_Q1<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:711:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double cordic_::atan2_cordic_Q1<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:711:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'double generic_nan<double>(char const*)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'double generic_abs<double>(double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'double cordic_::atan2_cordic_Q1<double>(double, double)' into 'double cordic_::atan2_cordic<double>(double, double)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:725:0)
+INFO: [HLS 214-178] Inlining function 'std::array<unsigned short, 5ul>::operator[](unsigned long)' into 'equalStep_baseline(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, double*, double*)' (../src/equalStep_baseline.cpp:23:0)
+INFO: [HLS 214-178] Inlining function 'atan2' into 'equalStep_baseline(hls::stream<hls::vector<unsigned short, 5ul>, 0>&, double*, double*)' (../src/equalStep_baseline.cpp:23:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.129 seconds; current allocated memory: 169.723 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 169.727 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.213 seconds; current allocated memory: 178.004 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'cordic_::atan2_cordic<double>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'cordic_::atan2_cordic<double>' () automatically.
+WARNING: [SYNCHK 200-23] C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_cordic.h:702: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.171 seconds; current allocated memory: 184.566 MB.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'cordic_::atan2_cordic<double>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'cordic_::atan2_cordic<double>' () automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'cordic_::atan2_generic<double>'... converting 8 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.765 seconds; current allocated memory: 209.555 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.797 seconds; current allocated memory: 251.793 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'equalStep_baseline' ...
+WARNING: [SYN 201-103] Legalizing function name 'addsub<0, 0, ap_fixed<89, 4, 5, 3, 0>, ap_fixed<89, 4, 5, 3, 0>, ap_uint<1> >' to 'addsub_0_0_ap_fixed_89_4_5_3_0_ap_fixed_89_4_5_3_0_ap_uint_1_s'.
+WARNING: [SYN 201-103] Legalizing function name 'addsub<0, 0, ap_fixed<89, 4, 5, 3, 0>, ap_fixed<89, 4, 5, 3, 0>, bool>' to 'addsub_0_0_ap_fixed_89_4_5_3_0_ap_fixed_89_4_5_3_0_bool_s'.
+WARNING: [SYN 201-103] Legalizing function name 'addsub<0, 0, ap_fixed<86, 1, 5, 3, 0>, ap_fixed<86, 1, 0, 3, 0>, ap_uint<1> >' to 'addsub_0_0_ap_fixed_86_1_5_3_0_ap_fixed_86_1_0_3_0_ap_uint_1_s'.
+WARNING: [SYN 201-103] Legalizing function name 'atan2_generic<double>' to 'atan2_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'atan2_cordic<double>' to 'atan2_cordic_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'addsub_0_0_ap_fixed_89_4_5_3_0_ap_fixed_89_4_5_3_0_ap_uint_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'addsub<0, 0, ap_fixed<89, 4, 5, 3, 0>, ap_fixed<89, 4, 5, 3, 0>, ap_uint<1> >'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'addsub<0, 0, ap_fixed<89, 4, 5, 3, 0>, ap_fixed<89, 4, 5, 3, 0>, ap_uint<1> >'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 255.297 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 256.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'addsub_0_0_ap_fixed_89_4_5_3_0_ap_fixed_89_4_5_3_0_bool_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'addsub<0, 0, ap_fixed<89, 4, 5, 3, 0>, ap_fixed<89, 4, 5, 3, 0>, bool>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'addsub<0, 0, ap_fixed<89, 4, 5, 3, 0>, ap_fixed<89, 4, 5, 3, 0>, bool>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 256.688 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 256.691 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'addsub_0_0_ap_fixed_86_1_5_3_0_ap_fixed_86_1_0_3_0_ap_uint_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'addsub<0, 0, ap_fixed<86, 1, 5, 3, 0>, ap_fixed<86, 1, 0, 3, 0>, ap_uint<1> >'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'addsub<0, 0, ap_fixed<86, 1, 5, 3, 0>, ap_fixed<86, 1, 0, 3, 0>, ap_uint<1> >'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 256.840 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 256.844 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'atan2_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'atan2_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 48, function 'atan2_generic<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.708 seconds; current allocated memory: 284.270 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.227 seconds; current allocated memory: 284.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'atan2_cordic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'atan2_cordic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 62, function 'atan2_cordic<double>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 284.270 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 284.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'equalStep_baseline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'wrap_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 98, loop 'wrap_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 284.270 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.048 seconds; current allocated memory: 284.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'addsub_0_0_ap_fixed_89_4_5_3_0_ap_fixed_89_4_5_3_0_ap_uint_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'addsub_0_0_ap_fixed_89_4_5_3_0_ap_fixed_89_4_5_3_0_ap_uint_1_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 284.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'addsub_0_0_ap_fixed_89_4_5_3_0_ap_fixed_89_4_5_3_0_bool_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'addsub_0_0_ap_fixed_89_4_5_3_0_ap_fixed_89_4_5_3_0_bool_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 284.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'addsub_0_0_ap_fixed_86_1_5_3_0_ap_fixed_86_1_0_3_0_ap_uint_1_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'addsub_0_0_ap_fixed_86_1_5_3_0_ap_fixed_86_1_0_3_0_ap_uint_1_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 284.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'atan2_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'atan2_generic_double_s' is 7435 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce))
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_86ns_7ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ctlz_86_86_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_31_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'atan2_generic_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.723 seconds; current allocated memory: 294.160 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'atan2_cordic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'atan2_cordic_double_s' is 18917 from HDL expression: ((1'b1 == ap_ce_reg) & (1'b0 == ap_block_pp0_stage0_11001_ignoreCallOp140))
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_5_full_dsp_0': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'atan2_cordic_double_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.053 seconds; current allocated memory: 315.043 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'equalStep_baseline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/imStack' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/wrappedPhase' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/mod_r' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'equalStep_baseline' to 's_axilite & ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'equalStep_baseline' pipeline 'wrap_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-104] Estimated max fanout for 'equalStep_baseline' is 28294 from HDL expression: ((1'b0 == ap_block_pp0_stage0_subdone_grp0_done_reg) & (1'b0 == ap_block_pp0_stage0_11001_ignoreCallOp238_grp0))
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_5_full_dsp_1': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_5_max_dsp_1': 11 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_30_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'uitodp_32ns_64_4_no_dsp_1': 5 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'equalStep_baseline'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.529 seconds; current allocated memory: 315.043 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.129 seconds; current allocated memory: 321.055 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.901 seconds; current allocated memory: 331.672 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for equalStep_baseline.
+INFO: [VLOG 209-307] Generating Verilog RTL for equalStep_baseline.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 86.47 MHz
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 3 seconds. Total elapsed time: 33.049 seconds; peak allocated memory: 331.672 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 37s

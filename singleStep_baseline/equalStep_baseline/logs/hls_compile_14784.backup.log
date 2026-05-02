@@ -1,0 +1,135 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline 
+INFO: [HLS 200-2176] Writing Vitis IDE component file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/equalStep_baseline.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/src/equalStep_baseline.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/equalStep_baseline.h' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/include/equalStep_baseline.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../include/stb_image.h' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'T:/Documents/ECE574/Project/fpp_accelerator/include/stb_image.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../test/tb_equalStep.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/test/tb_equalStep.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/TestData' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../TestData_small' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'T:/Documents/ECE574/Project/fpp_accelerator/TestData_small' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=equalStep_baseline' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=9ns' from hls_config.cfg(14)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9ns.
+INFO: [HLS 200-1465] Applying config ini 'cosim.trace_level=all' from hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'package.output.file=T:\Documents\ECE574\Project\equalStep_ip' from hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'vivado.clock=7ns' from hls_config.cfg(17)
+INFO: [HLS 200-2176] Writing Vitis IDE component file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 4.111 seconds; current allocated memory: 163.516 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../src/equalStep_baseline.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 16.071 seconds; current allocated memory: 170.730 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 30,133 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,802 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,424 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,055 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 970 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 941 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 941 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 941 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 941 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,033 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 999 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 976 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 887 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 871 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 854 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'phi_loop' is marked as complete unroll implied by the pipeline pragma (../src/equalStep_baseline.cpp:40:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_633_2' is marked as complete unroll implied by the pipeline pragma (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:633:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_629_1' is marked as complete unroll implied by the pipeline pragma (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:629:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_61_1' is marked as complete unroll implied by the pipeline pragma (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:61:22)
+INFO: [HLS 214-186] Unrolling loop 'phi_loop' (../src/equalStep_baseline.cpp:40:19) in function 'equalStep_baseline' completely with a factor of 5 (../src/equalStep_baseline.cpp:16:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_633_2' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:633:23) in function 'cordic_apfixed::generic_atan2<40, 22>' completely with a factor of 41 (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:568:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_629_1' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:629:23) in function 'cordic_apfixed::generic_atan2<40, 22>' completely with a factor of 41 (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:568:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_61_1' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:61:22) in function 'cordic_apfixed::cordic_circ_apfixed<47, 3, 1>' completely with a factor of 47 (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:53:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'VITIS_LOOP_61_1' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:61:22) in function 'cordic_apfixed::cordic_circ_apfixed<47, 3, 1>' has been removed because the loop is unrolled completely (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:62:1)
+INFO: [HLS 214-178] Inlining function 'std::__array_traits<unsigned short, 8ul>::_S_ref(unsigned short const (&) [8], unsigned long)' into 'std::array<unsigned short, 8ul>::operator[](unsigned long)' (T:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\array:186:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<40, 3, (ap_q_mode)5, (ap_o_mode)3, 0> cordic_apfixed::generic_atan2<40, 22>(ap_fixed<40, 22, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<40, 22, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'ap_fixed<40, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::atan2<40, 22>(ap_fixed<40, 22, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<40, 22, (ap_q_mode)5, (ap_o_mode)3, 0>)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\hls_math.h:1856:0)
+INFO: [HLS 214-178] Inlining function 'std::array<unsigned short, 8ul>::operator[](unsigned long)' into 'equalStep_baseline(hls::stream<hls::axis<hls::vector<unsigned short, 8ul>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (../src/equalStep_baseline.cpp:16:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<hls::vector<unsigned short, 8ul>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'equalStep_baseline(hls::stream<hls::axis<hls::vector<unsigned short, 8ul>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (../src/equalStep_baseline.cpp:16:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<40, 3, (ap_q_mode)5, (ap_o_mode)3, 0> hls::atan2<40, 22>(ap_fixed<40, 22, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<40, 22, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'equalStep_baseline(hls::stream<hls::axis<hls::vector<unsigned short, 8ul>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (../src/equalStep_baseline.cpp:16:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'equalStep_baseline(hls::stream<hls::axis<hls::vector<unsigned short, 8ul>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (../src/equalStep_baseline.cpp:16:0)
+INFO: [HLS 214-364] Automatically inlining function 'void cordic_apfixed::cordic_circ_apfixed<47, 3, 1>(ap_fixed<47, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<47, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<47, 3, (ap_q_mode)5, (ap_o_mode)3, 0>&)' to improve effectiveness of pipeline pragma in function 'equalStep_baseline(hls::stream<hls::axis<hls::vector<unsigned short, 8ul>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:649:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.201 seconds; current allocated memory: 172.223 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 172.223 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 180.109 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 184.871 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../src/equalStep_baseline.cpp:37:1) to (../src/equalStep_baseline.cpp:36:16) in function 'equalStep_baseline'... converting 137 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'equalStep_baseline' (T:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:13:15)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 213.297 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.321 seconds; current allocated memory: 213.312 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'equalStep_baseline' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'equalStep_baseline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln43_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln43_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln42_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'wrap_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 55, loop 'wrap_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.4 seconds; current allocated memory: 230.672 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.116 seconds; current allocated memory: 230.672 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'equalStep_baseline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/imStack_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/imStack_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/imStack_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/imStack_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/out_r_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/out_r_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/out_r_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'equalStep_baseline/out_r_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'equalStep_baseline' to 's_axilite & ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'equalStep_baseline' pipeline 'wrap_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-104] Estimated max fanout for 'equalStep_baseline' is 8180 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b0 == ap_block_pp0_stage0_subdone_grp1_done_reg))
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_15ns_32ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_16ns_32ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_16ns_33ns_34_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_16ns_33s_34_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_16ns_31_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_17ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_17s_33_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_19_8_40_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'equalStep_baseline'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.383 seconds; current allocated memory: 230.672 MB.
+INFO: [HLS 200-503] Applying 'config_export -vivado_clock 7ns', using 7 ns in generated Vivado XDC
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.69 seconds; current allocated memory: 250.152 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file T:/Documents/ECE574/Project/fpp_accelerator/singleStep_baseline/equalStep_baseline/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.718 seconds; current allocated memory: 256.367 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for equalStep_baseline.
+INFO: [VLOG 209-307] Generating Verilog RTL for equalStep_baseline.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 152.65 MHz
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 34.301 seconds; peak allocated memory: 256.441 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 37s

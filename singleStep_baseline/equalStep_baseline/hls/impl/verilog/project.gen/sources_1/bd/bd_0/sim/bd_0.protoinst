@@ -1,0 +1,59 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_0": {
+			"proto_instances": {
+				"/hls_inst/imStack": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "imStack_TDATA[127:0]"},
+						"TKEEP": { "actual": "imStack_TKEEP[15:0]"},
+						"TLAST": { "actual": "imStack_TLAST[0:0]"},
+						"TREADY": { "actual": "imStack_TREADY"},
+						"TSTRB": { "actual": "imStack_TSTRB[15:0]"},
+						"TVALID": { "actual": "imStack_TVALID"}
+					}
+				},
+				"/hls_inst/out_r": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "out_r_TDATA[63:0]"},
+						"TKEEP": { "actual": "out_r_TKEEP[7:0]"},
+						"TLAST": { "actual": "out_r_TLAST[0:0]"},
+						"TREADY": { "actual": "out_r_TREADY"},
+						"TSTRB": { "actual": "out_r_TSTRB[7:0]"},
+						"TVALID": { "actual": "out_r_TVALID"}
+					}
+				},
+				"/hls_inst/s_axi_control": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARADDR": { "actual": "s_axi_control_ARADDR[3:0]"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"ARREADY": { "actual": "s_axi_control_ARREADY"},
+						"ARVALID": { "actual": "s_axi_control_ARVALID"},
+						"AWADDR": { "actual": "s_axi_control_AWADDR[3:0]"},
+						"AWREADY": { "actual": "s_axi_control_AWREADY"},
+						"AWVALID": { "actual": "s_axi_control_AWVALID"},
+						"BREADY": { "actual": "s_axi_control_BREADY"},
+						"BRESP": { "actual": "s_axi_control_BRESP[1:0]"},
+						"BVALID": { "actual": "s_axi_control_BVALID"},
+						"RDATA": { "actual": "s_axi_control_RDATA[31:0]"},
+						"RREADY": { "actual": "s_axi_control_RREADY"},
+						"RRESP": { "actual": "s_axi_control_RRESP[1:0]"},
+						"RVALID": { "actual": "s_axi_control_RVALID"},
+						"WDATA": { "actual": "s_axi_control_WDATA[31:0]"},
+						"WREADY": { "actual": "s_axi_control_WREADY"},
+						"WSTRB": { "actual": "s_axi_control_WSTRB[3:0]"},
+						"WVALID": { "actual": "s_axi_control_WVALID"}
+					}
+				}
+			}
+		}
+	}
+}
