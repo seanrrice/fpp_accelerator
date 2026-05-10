@@ -2,8 +2,8 @@
 == Vivado Place & Route Results
 ================================================================
 + General Information:
-    * Date:            Sat May 02 10:14:22 -0700 2026
-    * Version:         2025.1 (Build 6135595 on May 21 2025)
+    * Date:            Sat May 02 15:00:49 -0700 2026
+    * Version:         2025.2 (Build 6295257 on Nov 14 2025)
     * Project:         equalStep_baseline
     * Solution:        hls (Vivado IP Flow Target)
     * Product family:  zynq
@@ -34,8 +34,8 @@
 ================================================================
 == Place & Route Resource Summary
 ================================================================
-LUT:              17041
-FF:               12844
+LUT:              16917
+FF:               12743
 DSP:              32
 BRAM:             0
 URAM:             0
@@ -50,47 +50,47 @@ SRL:              126
 | Timing         | Period (ns) |
 +----------------+-------------+
 | Target         | 7.000       |
-| Post-Synthesis | 5.809       |
-| Post-Route     | 6.659       |
+| Post-Synthesis | 5.830       |
+| Post-Route     | 6.695       |
 +----------------+-------------+
 
 
 ================================================================
 == Place & Route Resources
 ================================================================
-+-------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
-| Name                                                  | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
-+-------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
-| inst                                                  | 17041 | 12844 | 32  |      |      |     |        |      |         |          |        |
-|   (inst)                                              |       | 235   |     |      |      |     |        |      |         |          |        |
-|   control_s_axi_U                                     | 94    | 84    |     |      |      |     |        |      |         |          |        |
-|   grp_equalStep_baseline_Pipeline_wrap_loop_fu_74     | 16545 | 11750 | 32  |      |      |     |        |      |         |          |        |
-|     (grp_equalStep_baseline_Pipeline_wrap_loop_fu_74) | 16141 | 11748 | 13  |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_11ns_23ns_24_4_1_U18              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_11ns_24ns_25_4_1_U19              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_11ns_24ns_25_4_1_U20              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_11ns_24ns_25_4_1_U21              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_11ns_25ns_25_4_1_U26              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_11ns_25ns_25_4_1_U30              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_11ns_25ns_25_4_1_U34              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_12ns_24ns_25_4_1_U22              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_12ns_24ns_25_4_1_U25              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_12ns_24ns_25_4_1_U29              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_12ns_12ns_24ns_25_4_1_U33              |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_13s_12ns_25s_26_4_1_U23                |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_13s_12ns_25s_26_4_1_U24                |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_13s_12ns_25s_26_4_1_U27                |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_13s_12ns_25s_26_4_1_U28                |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_13s_12ns_25s_26_4_1_U31                |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_13s_12ns_25s_26_4_1_U32                |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_13s_12ns_25s_26_4_1_U35                |       |       |     |      |      |     |        |      |         |          |        |
-|     mac_muladd_13s_12ns_25s_26_4_1_U36                |       |       |     |      |      |     |        |      |         |          |        |
-|   regslice_both_imStack_V_data_V_U                    | 249   | 487   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_out_r_V_data_V_U                      | 80    | 149   |     |      |      |     |        |      |         |          |        |
-|   regslice_both_out_r_V_keep_V_U                      | 35    | 67    |     |      |      |     |        |      |         |          |        |
-|   regslice_both_out_r_V_last_V_U                      |       |       |     |      |      |     |        |      |         |          |        |
-|   regslice_both_out_r_V_strb_V_U                      | 36    | 67    |     |      |      |     |        |      |         |          |        |
-+-------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
++-------------------------------------------------------+-----+----+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                  | LUT | FF | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-------------------------------------------------------+-----+----+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                  |     |    |     |      |      | 126 |        |      |         |          |        |
+|   control_s_axi_U                                     |     |    |     |      |      |     |        |      |         |          |        |
+|   grp_equalStep_baseline_Pipeline_wrap_loop_fu_74     |     |    |     |      |      | 126 |        |      |         |          |        |
+|     (grp_equalStep_baseline_Pipeline_wrap_loop_fu_74) |     |    |     |      |      | 126 |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U          |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_11ns_23ns_24_4_1_U18              |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_11ns_24ns_25_4_1_U19              |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_11ns_24ns_25_4_1_U20              |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_11ns_24ns_25_4_1_U21              |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_11ns_25s_25_4_1_U26               |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_11ns_25s_25_4_1_U30               |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_11ns_25s_25_4_1_U34               |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_12ns_24ns_25_4_1_U22              |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_12ns_24ns_25_4_1_U25              |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_12ns_24ns_25_4_1_U29              |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_12ns_12ns_24ns_25_4_1_U33              |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_13s_12ns_25s_26_4_1_U23                |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_13s_12ns_25s_26_4_1_U24                |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_13s_12ns_25s_26_4_1_U27                |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_13s_12ns_25s_26_4_1_U28                |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_13s_12ns_25s_26_4_1_U31                |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_13s_12ns_25s_26_4_1_U32                |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_13s_12ns_25s_26_4_1_U35                |     |    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_13s_12ns_25s_26_4_1_U36                |     |    |     |      |      |     |        |      |         |          |        |
+|   regslice_both_imStack_V_data_V_U                    |     |    |     |      |      |     |        |      |         |          |        |
+|   regslice_both_out_r_V_data_V_U                      |     |    |     |      |      |     |        |      |         |          |        |
+|   regslice_both_out_r_V_keep_V_U                      |     |    |     |      |      |     |        |      |         |          |        |
+|   regslice_both_out_r_V_last_V_U                      |     |    |     |      |      |     |        |      |         |          |        |
+|   regslice_both_out_r_V_strb_V_U                      |     |    |     |      |      |     |        |      |         |          |        |
++-------------------------------------------------------+-----+----+-----+------+------+-----+--------+------+---------+----------+--------+
 
 
 ================================================================
@@ -99,8 +99,8 @@ SRL:              126
 +-----------------------------------------------------------+-----------+--------+--------+
 | Criteria                                                  | Guideline | Actual | Status |
 +-----------------------------------------------------------+-----------+--------+--------+
-| LUT                                                       | 70%       | 32.03% | OK     |
-| FD                                                        | 50%       | 12.07% | OK     |
+| LUT                                                       | 70%       | 31.80% | OK     |
+| FD                                                        | 50%       | 11.98% | OK     |
 | LUTRAM+SRL                                                | 25%       | 0.72%  | OK     |
 | MUXF7                                                     | 15%       | 0.00%  | OK     |
 | DSP                                                       | 80%       | 14.55% | OK     |
@@ -110,7 +110,7 @@ SRL:              126
 | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
 | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
 | Control Sets                                              | 998       | 18     | OK     |
-| Average Fanout for modules > 100k cells                   | 4         | 2.34   | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.33   | OK     |
 | Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
 | Non-FD high fanout nets > 10k loads                       | 0         | 1      | REVIEW |
 +-----------------------------------------------------------+-----------+--------+--------+
@@ -129,566 +129,146 @@ SRL:              126
 == Place & Route Timing Paths
 ================================================================
 * Timing was met
-+-------+-------+------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path  | SLACK | STARTPOINT PIN                                                                     | ENDPOINT PIN                                                                    | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
-|       |       |                                                                                    |                                                                                 |              |            |                |          DELAY |        DELAY |
-+-------+-------+------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path1 | 0.341 | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]/C | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[33]/D |           19 |          8 |          6.637 |          4.097 |        2.540 |
-| Path2 | 0.359 | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]/C | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[33]/D |           19 |          8 |          6.619 |          4.097 |        2.522 |
-| Path3 | 0.362 | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]/C | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]/D |           19 |          8 |          6.616 |          4.076 |        2.540 |
-| Path4 | 0.380 | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]/C | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]/D |           19 |          8 |          6.598 |          4.076 |        2.522 |
-| Path5 | 0.436 | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]/C | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[34]/D |           19 |          8 |          6.542 |          4.002 |        2.540 |
-+-------+-------+------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
++-------+-------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                         | ENDPOINT PIN                                                                    | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                        |                                                                                 |              |            |                |          DELAY |        DELAY |
++-------+-------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 0.305 | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i1483_reg_17333_reg[0]/C | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[33]/D |           19 |          8 |          6.720 |          4.154 |        2.566 |
+| Path2 | 0.313 | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i1483_reg_17333_reg[0]/C | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[35]/D |           19 |          8 |          6.712 |          4.146 |        2.566 |
+| Path3 | 0.386 | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i1483_reg_17333_reg[0]/C | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[33]/D |           19 |          8 |          6.592 |          4.161 |        2.431 |
+| Path4 | 0.389 | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i1483_reg_17333_reg[0]/C | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[34]/D |           19 |          8 |          6.636 |          4.070 |        2.566 |
+| Path5 | 0.407 | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i1483_reg_17333_reg[0]/C | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[35]/D |           19 |          8 |          6.571 |          4.140 |        2.431 |
++-------+-------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
 
-    +-----------------------------------------------------------------------------------+----------------------+
-    | Path1 Cells                                                                       | Primitive Type       |
-    +-----------------------------------------------------------------------------------+----------------------+
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[33]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392[3]_i_4      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[33]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392[3]_i_4      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[34]     | FLOP_LATCH.flop.FDRE |
-    +-----------------------------------------------------------------------------------+----------------------+
+    +--------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                          | Primitive Type       |
+    +--------------------------------------------------------------------------------------+----------------------+
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i1483_reg_17333_reg[0] | FLOP_LATCH.flop.FDRE |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492[0]_i_54            | LUT.others.LUT3      |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_44        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_33        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_27        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_21        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_15        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_9         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_3         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[2]_i_2         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482[3]_i_5         | LUT.others.LUT2      |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[3]_i_1     | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[7]_i_1     | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[11]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[15]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[19]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[23]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[27]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[31]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[35]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[33]        | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------------------------------------+----------------------+
 
-    +-----------------------------------------------------------------------------------+----------------------+
-    | Path2 Cells                                                                       | Primitive Type       |
-    +-----------------------------------------------------------------------------------+----------------------+
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[33]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392[3]_i_4      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[33]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392[3]_i_4      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[34]     | FLOP_LATCH.flop.FDRE |
-    +-----------------------------------------------------------------------------------+----------------------+
+    +--------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                          | Primitive Type       |
+    +--------------------------------------------------------------------------------------+----------------------+
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i1483_reg_17333_reg[0] | FLOP_LATCH.flop.FDRE |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492[0]_i_54            | LUT.others.LUT3      |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_44        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_33        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_27        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_21        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_15        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_9         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_3         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[2]_i_2         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482[3]_i_5         | LUT.others.LUT2      |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[3]_i_1     | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[7]_i_1     | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[11]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[15]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[19]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[23]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[27]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[31]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[35]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[35]        | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------------------------------------+----------------------+
 
-    +-----------------------------------------------------------------------------------+----------------------+
-    | Path3 Cells                                                                       | Primitive Type       |
-    +-----------------------------------------------------------------------------------+----------------------+
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[33]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392[3]_i_4      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[33]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392[3]_i_4      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[34]     | FLOP_LATCH.flop.FDRE |
-    +-----------------------------------------------------------------------------------+----------------------+
+    +--------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                          | Primitive Type       |
+    +--------------------------------------------------------------------------------------+----------------------+
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i1483_reg_17333_reg[0] | FLOP_LATCH.flop.FDRE |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492[0]_i_54            | LUT.others.LUT3      |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_44        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_33        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_27        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_21        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_15        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_9         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_3         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[2]_i_2         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477[3]_i_4         | LUT.others.LUT2      |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[3]_i_1     | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[7]_i_1     | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[11]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[15]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[19]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[23]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[27]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[31]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[35]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[33]        | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------------------------------------+----------------------+
 
-    +-----------------------------------------------------------------------------------+----------------------+
-    | Path4 Cells                                                                       | Primitive Type       |
-    +-----------------------------------------------------------------------------------+----------------------+
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[33]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392[3]_i_4      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[33]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392[3]_i_4      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[34]     | FLOP_LATCH.flop.FDRE |
-    +-----------------------------------------------------------------------------------+----------------------+
+    +--------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                          | Primitive Type       |
+    +--------------------------------------------------------------------------------------+----------------------+
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i1483_reg_17333_reg[0] | FLOP_LATCH.flop.FDRE |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492[0]_i_54            | LUT.others.LUT3      |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_44        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_33        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_27        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_21        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_15        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_9         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_3         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[2]_i_2         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482[3]_i_5         | LUT.others.LUT2      |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[3]_i_1     | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[7]_i_1     | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[11]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[15]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[19]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[23]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[27]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[31]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[35]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_94_reg_17482_reg[34]        | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------------------------------------+----------------------+
 
-    +-----------------------------------------------------------------------------------+----------------------+
-    | Path5 Cells                                                                       | Primitive Type       |
-    +-----------------------------------------------------------------------------------+----------------------+
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[33]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392[3]_i_4      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[33]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392[3]_i_4      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_30_reg_17392_reg[35]     | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i_reg_17234_reg[0]  | FLOP_LATCH.flop.FDRE |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407[0]_i_54          | LUT.others.LUT3      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_44      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_33      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_27      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_21      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_15      | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_9       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[0]_i_3       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_69_reg_17407_reg[2]_i_2       | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397[3]_i_5      | LUT.others.LUT2      |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[3]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[7]_i_1  | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[11]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[15]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[19]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[23]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[27]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[31]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[35]_i_1 | CARRY.others.CARRY4  |
-    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/sub_ln77_30_reg_17397_reg[34]     | FLOP_LATCH.flop.FDRE |
-    +-----------------------------------------------------------------------------------+----------------------+
+    +--------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                          | Primitive Type       |
+    +--------------------------------------------------------------------------------------+----------------------+
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tx_0_28_0_0_0_i1483_reg_17333_reg[0] | FLOP_LATCH.flop.FDRE |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492[0]_i_54            | LUT.others.LUT3      |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_44        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_33        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_27        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_21        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_15        | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_9         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[0]_i_3         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/tmp_221_reg_17492_reg[2]_i_2         | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477[3]_i_4         | LUT.others.LUT2      |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[3]_i_1     | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[7]_i_1     | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[11]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[15]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[19]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[23]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[27]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[31]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[35]_i_1    | CARRY.others.CARRY4  |
+    | grp_equalStep_baseline_Pipeline_wrap_loop_fu_74/add_ln82_94_reg_17477_reg[35]        | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------------------------------------+----------------------+
 
 
 ================================================================

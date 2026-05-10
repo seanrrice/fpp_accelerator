@@ -25,7 +25,7 @@ constexpr int next_pow2(int n) {
     while (p < n) p <<= 1;
     return p;
 }
-constexpr int CHUNK_SIZE = next_pow2(NSTEPS);
+constexpr int CHUNK_SIZE = NSTEPS;//next_pow2(NSTEPS);
 
 typedef hls::vector<uint16_t, CHUNK_SIZE> pixel_chunk_t;
 
@@ -36,13 +36,13 @@ typedef hls::vector<one_pixel_out_t, LANES> output_lane_t;
 
 
 typedef ap_uint<12> pixel_12_t;
-typedef ap_fixed<28,16> mod_12_t;
-typedef ap_fixed<29,17> accum_t;
-typedef ap_fixed<58,34> square_t;
-typedef ap_fixed<59,35> square_sum_t;
-typedef ap_fixed<14,2> coeff_t;
-typedef ap_fixed<18,3> phase_t;
-typedef ap_fixed<36,20> mod_t;
+typedef ap_ufixed<28,16> mod_12_t;
+typedef ap_fixed<33,17> accum_t;
+typedef ap_ufixed<66,34> square_t;
+typedef ap_ufixed<67,35> square_sum_t;
+typedef ap_fixed<19,2> coeff_t;
+typedef ap_fixed<27,3> phase_t;
+typedef ap_ufixed<36,20> mod_t;
 
 
 typedef hls::axis<input_lane_t,0,0,0> in_t;

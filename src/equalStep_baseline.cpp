@@ -33,12 +33,14 @@ static one_pixel_out_t compute_one_pixel(
     square_t sq1 = Phi_t1 * Phi_t1;
     square_t sq2 = Phi_t2 * Phi_t2;
     square_sum_t sum_sq = sq1 + sq2;
-    mod_12_t m_sqrt = hls::sqrt(sum_sq);
-    mod_t m = m_sqrt << 4;
+    float sum_sq_d = sum_sq.to_float();
+    float m_sqrt_u = hls::sqrt(sum_sq_d);
+    mod_12_t m_sqrt = (mod_12_t)m_sqrt_u;
+    mod_t m = mod_t(m_sqrt) << 4;
 
     one_pixel_out_t packed = 0;
-    packed(17,0) = p.range(17,0);
-    packed(53, 18) = m.range(35,0);
+    packed(26,0) = p.range(26,0);
+    packed(62, 27) = m.range(35,0);
 
     return packed;
 }
@@ -54,7 +56,7 @@ void equalStep_baseline(
     #pragma HLS INTERFACE s_axilite port=num_pixels
     #pragma HLS INTERFACE s_axilite port=return
 
-    #pragma HLS ALLOCATION function instances=compute_one_pixel limit=4
+    //#pragma HLS ALLOCATION function instances=compute_one_pixel limit=4
     
     coeff_t sin_k[NSTEPS];
     coeff_t cos_k[NSTEPS];

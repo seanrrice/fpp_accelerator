@@ -14,8 +14,8 @@
 #include "../include/equalStep_baseline.h"
 
 
-constexpr int M = 64;
-constexpr int N = 64;
+constexpr int M = 8;
+constexpr int N = 8;
 constexpr int MN = M * N;
 
 
