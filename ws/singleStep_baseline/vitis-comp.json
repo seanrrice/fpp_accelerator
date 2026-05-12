@@ -1,0 +1,13 @@
+{
+  "name": "singleStep_baseline",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "equalStep_baseline"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

@@ -1,0 +1,373 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Mon May 11 20:08:07 -0700 2026
+    * Version:         2025.1 (Build 6135595 on May 21 2025)
+    * Project:         equalStep_baseline
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg400-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  7 ns
+    * C-Synthesis target clock:    9 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              7033
+FF:               7196
+DSP:              16
+BRAM:             0
+URAM:             0
+SRL:              149
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 7.000       |
+| Post-Synthesis | 6.526       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++----------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                   | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++----------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                   | 7033 | 7196 | 16  |      |      |     |        |      |         |          |        |
+|   (inst)                               | 5498 | 6131 | 4   |      |      |     |        |      |         |          |        |
+|   bitselect_1ns_81ns_7ns_1_1_1_U10     |      |      |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                      |      |      |     |      |      |     |        |      |         |          |        |
+|   ctlz_81_81_1_1_U9                    | 110  |      |     |      |      |     |        |      |         |          |        |
+|   flow_control_loop_pipe_U             |      |      |     |      |      |     |        |      |         |          |        |
+|   fpext_32ns_64_2_no_dsp_1_U1          | 99   | 97   |     |      |      |     |        |      |         |          |        |
+|   fsqrt_32ns_32ns_32_16_no_dsp_1_U2    | 451  | 517  |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_16ns_15ns_32ns_33_4_1_U14 |      |      |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_16ns_16ns_32ns_33_4_1_U13 |      |      |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_17s_16ns_33ns_34_4_1_U16  |      |      |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_17s_16ns_33s_34_4_1_U15   |      |      |     |      |      |     |        |      |         |          |        |
+|   mul_37s_37s_72_3_1_U3                | 138  | 75   | 4   |      |      |     |        |      |         |          |        |
+|   mul_37s_37s_73_3_1_U4                | 112  | 76   | 4   |      |      |     |        |      |         |          |        |
+|   regslice_both_imStack_V_data_V_U     | 87   | 133  |     |      |      |     |        |      |         |          |        |
+|   regslice_both_out_r_V_data_V_U       | 368  | 131  |     |      |      |     |        |      |         |          |        |
+|   regslice_both_out_r_V_keep_V_U       |      |      |     |      |      |     |        |      |         |          |        |
+|   regslice_both_out_r_V_last_V_U       |      |      |     |      |      |     |        |      |         |          |        |
++----------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 13.22% | OK     |
+| FD                                                        | 50%       | 6.76%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.86%  | OK     |
+| MUXF7                                                     | 15%       | 0.04%  | OK     |
+| DSP                                                       | 80%       | 7.27%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 7.27%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 18     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.27   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+---------------------+--------------------------------+----------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+| Path  |               SLACK | STARTPOINT PIN                 | ENDPOINT PIN                                       | LOGIC LEVELS | MAX FANOUT |      DATAPATH DELAY |      DATAPATH LOGIC |        DATAPATH NET |
+|       |                     |                                |                                                    |              |            |                     |               DELAY |               DELAY |
++-------+---------------------+--------------------------------+----------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+| Path1 | 0.47399416565895081 | select_ln47_reg_5767_reg[63]/C | sub_ln47_4_reg_5821_reg[4]/D                       |            6 |          9 | 6.51900005340576172 | 1.42500007152557373 | 5.09399986267089844 |
+| Path2 | 0.49999558925628662 | select_ln47_reg_5767_reg[63]/C | sub_ln47_4_reg_5821_reg[6]/D                       |            7 |          9 | 6.52899932861328125 | 1.67200005054473877 | 4.85699987411499023 |
+| Path3 | 0.75499516725540161 | select_ln47_reg_5767_reg[63]/C | trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2/D |            6 |          9 | 6.11699867248535156 | 1.42500007152557373 | 4.69199943542480469 |
+| Path4 | 0.90399509668350220 | select_ln47_reg_5767_reg[63]/C | sub_ln47_4_reg_5821_reg[3]/D                       |            6 |          9 | 6.08899927139282227 | 1.43300020694732666 | 4.65600013732910156 |
+| Path5 | 0.92699491977691650 | select_ln47_reg_5767_reg[63]/C | sub_ln47_4_reg_5821_reg[5]/D                       |            6 |          9 | 6.06599903106689453 | 1.42500007152557373 | 4.64099979400634766 |
++-------+---------------------+--------------------------------+----------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+
+    +------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                            | Primitive Type       |
+    +------------------------------------------------------------------------+----------------------+
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[4]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[4]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[6]_i_3                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821_reg[6]_i_1                       | MUXFX.others.MUXF7   |
+    | sub_ln47_4_reg_5821_reg[6]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[2]_i_3                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2_i_1 | LUT.others.LUT6      |
+    | trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2                       | DMEM.srl.SRL16E      |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_26                          | LUT.others.LUT5      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_8                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_5                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_2                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[3]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[5]                                             | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                            | Primitive Type       |
+    +------------------------------------------------------------------------+----------------------+
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[4]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[4]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[6]_i_3                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821_reg[6]_i_1                       | MUXFX.others.MUXF7   |
+    | sub_ln47_4_reg_5821_reg[6]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[2]_i_3                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2_i_1 | LUT.others.LUT6      |
+    | trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2                       | DMEM.srl.SRL16E      |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_26                          | LUT.others.LUT5      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_8                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_5                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_2                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[3]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[5]                                             | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                            | Primitive Type       |
+    +------------------------------------------------------------------------+----------------------+
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[4]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[4]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[6]_i_3                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821_reg[6]_i_1                       | MUXFX.others.MUXF7   |
+    | sub_ln47_4_reg_5821_reg[6]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[2]_i_3                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2_i_1 | LUT.others.LUT6      |
+    | trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2                       | DMEM.srl.SRL16E      |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_26                          | LUT.others.LUT5      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_8                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_5                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_2                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[3]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[5]                                             | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                            | Primitive Type       |
+    +------------------------------------------------------------------------+----------------------+
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[4]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[4]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[6]_i_3                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821_reg[6]_i_1                       | MUXFX.others.MUXF7   |
+    | sub_ln47_4_reg_5821_reg[6]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[2]_i_3                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2_i_1 | LUT.others.LUT6      |
+    | trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2                       | DMEM.srl.SRL16E      |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_26                          | LUT.others.LUT5      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_8                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_5                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_2                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[3]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[5]                                             | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                            | Primitive Type       |
+    +------------------------------------------------------------------------+----------------------+
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[4]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[4]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[6]_i_3                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821_reg[6]_i_1                       | MUXFX.others.MUXF7   |
+    | sub_ln47_4_reg_5821_reg[6]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[2]_i_3                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2_i_1 | LUT.others.LUT6      |
+    | trunc_ln47_3_reg_5809_pp0_iter11_reg_reg[0]_srl2                       | DMEM.srl.SRL16E      |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_26                          | LUT.others.LUT5      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_8                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_5                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_2                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[3]                                             | FLOP_LATCH.flop.FDRE |
+    | select_ln47_reg_5767_reg[63]                                           | FLOP_LATCH.flop.FDRE |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[3]_i_10                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_24                          | LUT.others.LUT4      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_19                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_11                          | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_4                           | LUT.others.LUT6      |
+    | ctlz_81_81_1_1_U9/sub_ln47_4_reg_5821[5]_i_1                           | LUT.others.LUT6      |
+    | sub_ln47_4_reg_5821_reg[5]                                             | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+---------------------------------------------------------------------------+
+| Report Type              | Report Location                                                           |
++--------------------------+---------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/equalStep_baseline_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/equalStep_baseline_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/equalStep_baseline_power_synth.rpt                    |
+| timing                   | impl/verilog/report/equalStep_baseline_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/equalStep_baseline_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/equalStep_baseline_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/equalStep_baseline_utilization_hierarchical_synth.rpt |
++--------------------------+---------------------------------------------------------------------------+
+
+

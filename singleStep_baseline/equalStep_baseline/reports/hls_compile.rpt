@@ -4,23 +4,24 @@
 == Synthesis Summary Report of 'equalStep_baseline'
 ================================================================
 + General Information: 
-    * Date:           Wed Apr 15 00:43:57 2026
-    * Version:        2025.2 (Build 6295257 on Nov 14 2025)
+    * Date:           Mon May 11 19:35:38 2026
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
     * Project:        equalStep_baseline
     * Solution:       hls (Vivado IP Flow Target)
     * Product family: zynq
     * Target device:  xc7z020-clg400-1
     
 
-* Performance & Resource Estimates: 
-+----------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+------+---------+-------------+-------------+-----+
-|        Modules       | Issue|               | Iteration|         | Trip |          |       Latency       |      |      |         |             |             |     |
-|        & Loops       | Type | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|    (ns)   | Slack| BRAM |   DSP   |      FF     |     LUT     | URAM|
-+----------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+------+---------+-------------+-------------+-----+
-|+ equalStep_baseline  |     -|              -|         -|     4096|     -|    rewind|     4151|  3.736e+04|  0.02|     -|  18 (8%)|  12931 (12%)|  21567 (40%)|    -|
-| o wrap_loop          |     -|              -|        55|        1|  4096|       yes|     4149|  3.734e+04|  6.57|     -|        -|            -|            -|    -|
-+----------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+------+---------+-------------+-------------+-----+
-    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------+------+------+---------+-----------+----------+---------+---------+----------+------+---------+-------------+-------------+-----+
+    |        Modules       | Issue|      |       Latency       | Iteration|         |   Trip  |          |      |         |             |             |     |
+    |        & Loops       | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count  | Pipelined| BRAM |   DSP   |      FF     |     LUT     | URAM|
+    +----------------------+------+------+---------+-----------+----------+---------+---------+----------+------+---------+-------------+-------------+-----+
+    |+ equalStep_baseline  |     -|  0.02|  2073655|  1.866e+07|         -|  2073600|        -|    rewind|     -|  18 (8%)|  12940 (12%)|  21599 (40%)|    -|
+    | o wrap_loop          |     -|  6.57|  2073653|  1.866e+07|        55|        1|  2073600|       yes|     -|        -|            -|            -|    -|
+    +----------------------+------+------+---------+-----------+----------+---------+---------+----------+------+---------+-------------+-------------+-----+
 
 
 ================================================================
@@ -66,12 +67,12 @@
 == SW I/O Information
 ================================================================
 * Top Function Arguments
-+----------+-----------+---------------------------------------------------------------------------------------------------+
-| Argument | Direction | Datatype                                                                                          |
-+----------+-----------+---------------------------------------------------------------------------------------------------+
-| imStack  | in        | stream<hls::axis<hls::vector<unsigned short, 8UL>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0>& |
-| out      | out       | stream<hls::axis<ap_uint<64>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0>&                      |
-+----------+-----------+---------------------------------------------------------------------------------------------------+
++----------+-----------+----------------------------------------------------------------------------+
+| Argument | Direction | Datatype                                                                   |
++----------+-----------+----------------------------------------------------------------------------+
+| imStack  | in        | stream<hls::axis<hls::vector<unsigned short, 8>, 0, 0, 0, '8', false>, 0>& |
+| out      | out       | stream<hls::axis<ap_uint<64>, 0, 0, 0, '8', false>, 0>&                    |
++----------+-----------+----------------------------------------------------------------------------+
 
 * SW-to-HW Mapping
 +----------+--------------+-----------+
@@ -123,9 +124,9 @@
 |   icmp_ln594_fu_1007_p2                |     |        | icmp_ln594             | seteq     | auto                   | 0       |
 |   and_ln594_fu_4922_p2                 |     |        | and_ln594              | and       | auto                   | 0       |
 |   icmp_ln598_fu_1013_p2                |     |        | icmp_ln598             | seteq     | auto                   | 0       |
-|   select_ln599_fu_5174_p3              |     |        | select_ln599           | select    | auto_sel               | 0       |
-|   or_ln599_fu_5181_p2                  |     |        | or_ln599               | or        | auto                   | 0       |
-|   out_fu_5261_p10                      |     |        | select_ln599_1         | select    | auto_sel               | 0       |
+|   select_ln599_fu_5156_p3              |     |        | select_ln599           | select    | auto_sel               | 0       |
+|   or_ln599_fu_5163_p2                  |     |        | or_ln599               | or        | auto                   | 0       |
+|   out_fu_5243_p10                      |     |        | select_ln599_1         | select    | auto_sel               | 0       |
 |   in1abs_fu_1017_p2                    |     |        | in1abs                 | sub       | fabric                 | 0       |
 |   in1abs_3_fu_1022_p3                  |     |        | in1abs_3               | select    | auto_sel               | 0       |
 |   in2abs_fu_1029_p2                    |     |        | in2abs                 | sub       | fabric                 | 0       |
@@ -426,7 +427,7 @@
 |   sub_ln77_41_fu_4749_p2               |     |        | sub_ln77_41            | sub       | fabric                 | 0       |
 |   ty_0_41_0_0_0_i_fu_4754_p3           |     |        | ty_0_41_0_0_0_i        | select    | auto_sel               | 0       |
 |   tz_0_41_0_0_0_i_v_cast_fu_4808_p3    |     |        | tz_0_41_0_0_0_i_v_cast | select    | auto_sel               | 0       |
-|   empty_37_fu_4789_p3                  |     |        | empty_37               | select    | auto_sel               | 0       |
+|   empty_36_fu_4789_p3                  |     |        | empty_36               | select    | auto_sel               | 0       |
 |   sub_ln77_42_fu_4824_p2               |     |        | sub_ln77_42            | sub       | fabric                 | 0       |
 |   add_ln82_42_fu_4829_p2               |     |        | add_ln82_42            | add       | fabric                 | 0       |
 |   select_ln65_fu_4873_p3               |     |        | select_ln65            | select    | auto_sel               | 0       |
@@ -435,13 +436,13 @@
 |   sub_ln652_fu_4929_p2                 |     |        | sub_ln652              | sub       | fabric                 | 0       |
 |   z_fu_4935_p3                         |     |        | z                      | select    | auto_sel               | 0       |
 |   and_ln655_fu_4942_p2                 |     |        | and_ln655              | and       | auto                   | 0       |
-|   sub_ln656_fu_5193_p2                 |     |        | sub_ln656              | sub       | fabric                 | 0       |
+|   sub_ln656_fu_5175_p2                 |     |        | sub_ln656              | sub       | fabric                 | 0       |
 |   or_ln658_fu_1041_p2                  |     |        | or_ln658               | or        | auto                   | 0       |
 |   icmp_ln658_fu_1047_p2                |     |        | icmp_ln658             | seteq     | auto                   | 0       |
-|   add_ln659_fu_5208_p2                 |     |        | add_ln659              | add       | fabric                 | 0       |
-|   sub_ln662_fu_5223_p2                 |     |        | sub_ln662              | sub       | fabric                 | 0       |
-|   xor_ln582_fu_5238_p2                 |     |        | xor_ln582              | xor       | auto                   | 0       |
-|   and_ln586_1_fu_5243_p2               |     |        | and_ln586_1            | and       | auto                   | 0       |
+|   add_ln659_fu_5190_p2                 |     |        | add_ln659              | add       | fabric                 | 0       |
+|   sub_ln662_fu_5205_p2                 |     |        | sub_ln662              | sub       | fabric                 | 0       |
+|   xor_ln582_fu_5220_p2                 |     |        | xor_ln582              | xor       | auto                   | 0       |
+|   and_ln586_1_fu_5225_p2               |     |        | and_ln586_1            | and       | auto                   | 0       |
 |   or_ln586_fu_4956_p2                  |     |        | or_ln586               | or        | auto                   | 0       |
 |   xor_ln586_fu_4960_p2                 |     |        | xor_ln586              | xor       | auto                   | 0       |
 |   and_ln590_1_fu_4966_p2               |     |        | and_ln590_1            | and       | auto                   | 0       |
@@ -504,21 +505,21 @@
 |   sub_ln49_2_fu_5116_p2                |     |        | sub_ln49_2             | sub       | fabric                 | 0       |
 |   select_ln49_1_fu_5122_p3             |     |        | select_ln49_1          | select    | auto_sel               | 0       |
 |   icmp_ln49_2_fu_5130_p2               |     |        | icmp_ln49_2            | seteq     | auto                   | 0       |
-|   icmp_ln49_3_fu_5317_p2               |     |        | icmp_ln49_3            | setlt     | auto                   | 0       |
-|   select_ln49_4_fu_5322_p3             |     |        | select_ln49_4          | select    | auto_sel               | 0       |
-|   ashr_ln49_fu_5332_p2                 |     |        | ashr_ln49              | ashr      | auto_pipe              | 0       |
-|   select_ln49_2_fu_5341_p3             |     |        | select_ln49_2          | select    | auto_sel               | 0       |
+|   icmp_ln49_3_fu_5299_p2               |     |        | icmp_ln49_3            | setlt     | auto                   | 0       |
+|   select_ln49_4_fu_5304_p3             |     |        | select_ln49_4          | select    | auto_sel               | 0       |
+|   ashr_ln49_fu_5314_p2                 |     |        | ashr_ln49              | ashr      | auto_pipe              | 0       |
+|   select_ln49_2_fu_5323_p3             |     |        | select_ln49_2          | select    | auto_sel               | 0       |
 |   icmp_ln49_4_fu_5150_p2               |     |        | icmp_ln49_4            | seteq     | auto                   | 0       |
-|   shl_ln49_fu_5349_p2                  |     |        | shl_ln49               | shl       | auto_pipe              | 0       |
-|   select_ln49_3_fu_5354_p3             |     |        | select_ln49_3          | select    | auto_sel               | 0       |
-|   xor_ln49_fu_5364_p2                  |     |        | xor_ln49               | xor       | auto                   | 0       |
-|   and_ln49_fu_5369_p2                  |     |        | and_ln49               | and       | auto                   | 0       |
-|   or_ln49_fu_5156_p2                   |     |        | or_ln49                | or        | auto                   | 0       |
-|   xor_ln49_1_fu_5162_p2                |     |        | xor_ln49_1             | xor       | auto                   | 0       |
-|   and_ln49_1_fu_5168_p2                |     |        | and_ln49_1             | and       | auto                   | 0       |
+|   shl_ln49_fu_5331_p2                  |     |        | shl_ln49               | shl       | auto_pipe              | 0       |
+|   select_ln49_3_fu_5336_p3             |     |        | select_ln49_3          | select    | auto_sel               | 0       |
+|   xor_ln49_fu_5346_p2                  |     |        | xor_ln49               | xor       | auto                   | 0       |
+|   and_ln49_fu_5351_p2                  |     |        | and_ln49               | and       | auto                   | 0       |
+|   or_ln49_fu_5356_p2                   |     |        | or_ln49                | or        | auto                   | 0       |
+|   xor_ln49_1_fu_5360_p2                |     |        | xor_ln49_1             | xor       | auto                   | 0       |
+|   and_ln49_1_fu_5366_p2                |     |        | and_ln49_1             | and       | auto                   | 0       |
 |   sparsemux_9_3_32_1_1_U12             |     |        | m                      | sparsemux | onehotencoding_realdef | 0       |
-|   icmp_ln57_fu_808_p2                  |     |        | icmp_ln57              | seteq     | auto                   | 0       |
-|   i_3_fu_814_p2                        |     |        | i_3                    | add       | fabric                 | 0       |
+|   o_last_fu_808_p2                     |     |        | o_last                 | seteq     | auto                   | 0       |
+|   i_fu_814_p2                          |     |        | i                      | add       | fabric                 | 0       |
 +----------------------------------------+-----+--------+------------------------+-----------+------------------------+---------+
 
 
@@ -538,17 +539,17 @@
 == Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+-----------------+----------------------------------+----------------------------------------------------------+
-| Type            | Options                          | Location                                                 |
-+-----------------+----------------------------------+----------------------------------------------------------+
-| INTERFACE       | axis port=imStack                | in equalstep_baseline (../src/equalStep_baseline.cpp:17) |
-| INTERFACE       | axis port=out register_mode=both | in equalstep_baseline (../src/equalStep_baseline.cpp:18) |
-| INTERFACE       | s_axilite port=return            | in equalstep_baseline (../src/equalStep_baseline.cpp:19) |
-| ARRAY_PARTITION | variable=sin_k type=complete     | in equalstep_baseline (../src/equalStep_baseline.cpp:25) |
-| ARRAY_PARTITION | variable=cos_k type=complete     | in equalstep_baseline (../src/equalStep_baseline.cpp:26) |
-| UNROLL          |                                  | in equalstep_baseline (../src/equalStep_baseline.cpp:30) |
-| PIPELINE        | ii=1                             | in equalstep_baseline (../src/equalStep_baseline.cpp:37) |
-| UNROLL          |                                  | in equalstep_baseline (../src/equalStep_baseline.cpp:41) |
-+-----------------+----------------------------------+----------------------------------------------------------+
++-----------------+----------------------------------+-----------------------------------------------------------------+
+| Type            | Options                          | Location                                                        |
++-----------------+----------------------------------+-----------------------------------------------------------------+
+| INTERFACE       | axis port=imStack                | ../src/equalStep_baseline.cpp:17 in equalstep_baseline, imStack |
+| INTERFACE       | axis port=out register_mode=both | ../src/equalStep_baseline.cpp:18 in equalstep_baseline, out     |
+| INTERFACE       | s_axilite port=return            | ../src/equalStep_baseline.cpp:19 in equalstep_baseline, return  |
+| ARRAY_PARTITION | variable=sin_k type=complete     | ../src/equalStep_baseline.cpp:25 in equalstep_baseline, sin_k   |
+| ARRAY_PARTITION | variable=cos_k type=complete     | ../src/equalStep_baseline.cpp:26 in equalstep_baseline, cos_k   |
+| UNROLL          |                                  | ../src/equalStep_baseline.cpp:30 in equalstep_baseline          |
+| PIPELINE        | ii=1                             | ../src/equalStep_baseline.cpp:37 in equalstep_baseline          |
+| UNROLL          |                                  | ../src/equalStep_baseline.cpp:41 in equalstep_baseline          |
++-----------------+----------------------------------+-----------------------------------------------------------------+
 
 
